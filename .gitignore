@@ -1,0 +1,14 @@
+# Build output
+_site/
+
+# Raw downloads are reproducible from src/ingest — never committed
+data/raw/
+
+# Julia
+Manifest.toml
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+# macOS
+.DS_Store
