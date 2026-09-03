@@ -1,0 +1,44 @@
+name: Refresh data
+
+# The dev sandbox has no route to the statistical agencies' APIs, but CI does.
+# This is where new data actually enters the repo.
+
+on:
+  schedule:
+    - cron: '17 4 1 * *'   # monthly, 04:17 UTC on the 1st
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.12'
+      - uses: julia-actions/cache@v2
+
+      - run: julia --project -e 'using Pkg; Pkg.instantiate()'
+      # The same ingest the deploy runs: all qualifying stations. The old
+      # `geosphere.jl --refresh` wrote only the two focus stations and would
+      # have turned the refresh PR into a deletion of 136 stations (run
+      # 33492056760, 2026-09-01 — caught only because the PR step failed).
+      - run: julia --project src/ingest/heat_days_stations.jl --all
+
+      # A pull request, not a direct push: revisions to the underlying series
+      # should be looked at, not merged silently. Needs the repository setting
+      # Settings → Actions → General → "Allow GitHub Actions to create and
+      # approve pull requests"; without it this step fails after the push.
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'data: refresh processed series'
+          branch: data/refresh
+          title: 'Refresh processed data'
+          body: |
+            Automated refresh of `data/processed/`.
+            Check the diff for revisions to historical values, not just new rows.
+          add-paths: data/processed

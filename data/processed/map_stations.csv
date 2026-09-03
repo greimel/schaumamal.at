@@ -1,0 +1,139 @@
+station_id,name,state,lat,lon,altitude,from_year,tier,slug,focus,retrieved
+165,Abtenau,Salzburg,47.56667,13.34333,709,1963,bronze,abtenau,false,2026-09-03
+2,Aigen im Ennstal,Steiermark,47.53278,14.13826,641,1939,silber,aigen,true,2026-09-03
+4,Amstetten,Niederösterreich,48.10889,14.895,266,1936,silber,amstetten,false,2026-09-03
+162,Aspach,Oberösterreich,48.18306,13.3,427,1969,bronze,aspach,false,2026-09-03
+170,Aspang,Niederösterreich,47.575,16.10139,454,1948,silber,aspang,false,2026-09-03
+6,Bad Bleiberg,Kärnten,46.62528,13.68444,908.7,1896,platin,bleiberg,false,2026-09-03
+21,Bad Eisenkappel,Kärnten,46.49056,14.59333,623,1967,bronze,eisenkappel,false,2026-09-03
+7,Bad Gastein,Salzburg,47.11056,13.13336,1092,1926,silber,gastein,false,2026-09-03
+8,Bad Gleichenberg,Steiermark,46.87222,15.90361,269,1895,platin,gleichenberg,false,2026-09-03
+9,Bad Goisern,Oberösterreich,47.62194,13.64472,538,1936,silber,goisern,false,2026-09-03
+132,Bad Ischl,Oberösterreich,47.70619,13.64714,506.7,1936,silber,ischl,false,2026-09-03
+10,Bad Mitterndorf,Steiermark,47.55333,13.93472,814,1970,bronze,mitterndorf,false,2026-09-03
+13,Bernstein,Burgenland,47.40833,16.26139,630.8,1949,silber,bernstein,false,2026-09-03
+14,Bischofshofen,Salzburg,47.40667,13.22111,549.9,1936,silber,bischofshofen,false,2026-09-03
+181,Bludenz,Vorarlberg,47.14778,9.82944,571,1936,silber,bludenz,false,2026-09-03
+15,Bregenz,Vorarlberg,47.49917,9.74611,424,1936,silber,bregenz,false,2026-09-03
+16,Brenner,Tirol,47.00722,11.51083,1412,1948,silber,brenner,false,2026-09-03
+17,Bruck an der Mur,Steiermark,47.403056,15.233611,489,1895,platin,bruck-an-der-mur,false,2026-09-03
+18,Bruckneudorf,Burgenland,48.01278,16.845,165.6,1939,silber,bruckneudorf,false,2026-09-03
+19,Dellach,Kärnten,46.74189,13.08286,628.2,1962,bronze,dellach,false,2026-09-03
+116,Deutschlandsberg,Steiermark,46.82167,15.22694,354,1895,platin,deutschlandsberg,true,2026-09-03
+137,Döllach,Kärnten,46.95806,12.9025,1071,1926,silber,doellach,false,2026-09-03
+22,Eisenstadt Nordost,Burgenland,47.85417,16.53833,184,1936,silber,eisenstadt,true,2026-09-03
+23,Enns,Oberösterreich,48.19583,14.45028,317,1948,silber,enns,false,2026-09-03
+91,Feistritz ob Bleiburg,Kärnten,46.561389,14.765,523,1961,bronze,feistritz,false,2026-09-03
+24,Feldkirch,Vorarlberg,47.27111,9.60972,438.4,1895,platin,feldkirch,false,2026-09-03
+120,Ferlach,Kärnten,46.53111,14.31417,459.1,1953,bronze,ferlach,false,2026-09-03
+205,Feuerkogel,Oberösterreich,47.81667,13.71778,1618,1928,silber,feuerkogel,false,2026-09-03
+186,Flattnitz,Kärnten,46.94083,14.03611,1437.2,1970,bronze,flattnitz,false,2026-09-03
+26,Freistadt,Oberösterreich,48.49472,14.50639,539,1895,platin,freistadt,false,2026-09-03
+187,Friesach,Kärnten,46.95861,14.40583,640,1958,bronze,friesach,false,2026-09-03
+154,Fürstenfeld,Steiermark,47.03083,16.08083,271,1936,silber,fuerstenfeld,false,2026-09-03
+27,Gallspach,Oberösterreich,48.20422,13.825,425.9,1966,bronze,gallspach,false,2026-09-03
+28,Galtür,Tirol,46.96806,10.18556,1587,1901,gold,galtuer,false,2026-09-03
+200,Gleisdorf,Steiermark,47.11556,15.70806,377.3,1961,bronze,gleisdorf,false,2026-09-03
+30,Graz Universität/Heinrichstraße,Steiermark,47.08,15.448056,366,1894,platin,graz,false,2026-09-03
+31,Groß-Enzersdorf,Niederösterreich,48.19975,16.55917,154.3,1936,silber,gross-enzersdorf,false,2026-09-03
+32,Gumpoldskirchen,Niederösterreich,48.03583,16.28083,212,1948,silber,gumpoldskirchen,true,2026-09-03
+183,Güssing,Burgenland,47.0625,16.32186,215.3,1948,silber,guessing,false,2026-09-03
+176,Hahnenkamm-Ehrenbachhöhe,Tirol,47.41831,12.35928,1793.8,1938,silber,hahnenkamm,false,2026-09-03
+126,Haiming,Tirol,47.25972,10.88944,659,1947,silber,haiming,false,2026-09-03
+166,Hall bei Admont,Steiermark,47.59444,14.49083,637,1895,platin,hall-bei-admont,false,2026-09-03
+158,Hohenau,Niederösterreich,48.605835,16.913055,150,1948,silber,hohenau,false,2026-09-03
+146,Holzgau,Tirol,47.25758,10.33867,1092,1936,silber,holzgau,false,2026-09-03
+199,Horn Wasserwerk,Niederösterreich,48.674999,15.643888,308,1936,silber,horn,false,2026-09-03
+38,Imst,Tirol,47.23694,10.74222,773,1936,silber,imst,false,2026-09-03
+175,Innsbruck Flughafen,Tirol,47.25999,11.35667,578,1951,bronze,innsbruck-flughafen,false,2026-09-03
+39,Innsbruck Universität,Tirol,47.25986,11.38425,578,1877,platin,innsbruck,false,2026-09-03
+40,Irdning-Gumpenstein,Steiermark,47.495,14.09967,697.1,1953,bronze,irdning,false,2026-09-03
+193,Jauerling,Niederösterreich,48.33447,15.33911,955,1935,silber,jauerling,false,2026-09-03
+42,Jenbach,Tirol,47.38878,11.75814,529,1955,bronze,jenbach,false,2026-09-03
+43,Kals,Tirol,47.00478,12.6465,1352.4,1951,bronze,kals,false,2026-09-03
+44,Kalwang,Steiermark,47.42126,14.75961,743.6,1966,bronze,kalwang,false,2026-09-03
+122,Kanzelhöhe,Kärnten,46.67722,13.90194,1520,1938,silber,kanzelhoehe,false,2026-09-03
+118,Kitzbühel,Tirol,47.44389,12.38917,772,1936,silber,kitzbuehel,false,2026-09-03
+48,Klagenfurt Flughafen,Kärnten,46.64833,14.31833,450,1952,bronze,klagenfurt,false,2026-09-03
+157,Kollerschlag,Oberösterreich,48.60278,13.83917,714,1895,platin,kollerschlag,false,2026-09-03
+46,Krems,Niederösterreich,48.41861,15.62222,202,1936,silber,krems,true,2026-09-03
+204,Kremsmünster,Oberösterreich,48.055,14.13111,382,1874,platin,kremsmuenster,false,2026-09-03
+47,Krimml,Salzburg,47.22911,12.18197,1008.8,1953,bronze,krimml,false,2026-09-03
+142,Kufstein,Tirol,47.57528,12.16278,490,1905,gold,kufstein,false,2026-09-03
+152,Laa an der Thaya Kläranlage,Niederösterreich,48.73139,16.38972,184,1952,bronze,laa,false,2026-09-03
+50,Landeck,Tirol,47.14025,10.56364,795.6,1946,silber,landeck,false,2026-09-03
+51,Langenlebarn,Niederösterreich,48.32389,16.11806,175.3,1963,bronze,langenlebarn,false,2026-09-03
+52,Langenlois,Niederösterreich,48.4725,15.69722,207,1965,bronze,langenlois,false,2026-09-03
+67,Leiser Berge,Niederösterreich,48.55889,16.37167,456.5,1948,silber,leiser-berge,false,2026-09-03
+55,Lienz,Tirol,46.82555,12.80639,661,1880,platin,lienz,false,2026-09-03
+56,Linz Stadt,Oberösterreich,48.29639,14.28528,262,1895,platin,linz,false,2026-09-03
+57,Litschau,Niederösterreich,48.95464,15.03831,557.6,1954,bronze,litschau,false,2026-09-03
+206,Loibl Tunnel,Kärnten,46.44389,14.24917,1096.9,1959,bronze,loibl,false,2026-09-03
+59,Mariazell/St.Sebastian Flugfeld,Steiermark,47.78917,15.30222,864,1948,silber,mariazell,false,2026-09-03
+60,Mattsee,Salzburg,47.97722,13.10556,502,1949,silber,mattsee,false,2026-09-03
+61,Mayrhofen,Tirol,47.1625,11.85139,640,1936,silber,mayrhofen,false,2026-09-03
+163,Mondsee,Oberösterreich,47.85083,13.34722,480.5,1936,silber,mondsee,false,2026-09-03
+63,Mönichkirchen,Niederösterreich,47.51111,16.03333,991,1954,bronze,moenichkirchen,false,2026-09-03
+167,Mürzzuschlag,Steiermark,47.60222,15.67278,705.2,1948,silber,muerzzuschlag,false,2026-09-03
+121,Nauders,Tirol,46.89111,10.49694,1330.2,1958,bronze,nauders,false,2026-09-03
+64,Neumarkt,Steiermark,47.06972,14.42472,869,1936,silber,neumarkt,false,2026-09-03
+65,Neusiedl am See,Burgenland,47.94917,16.82889,117,1936,silber,neusiedl,false,2026-09-03
+66,Obergurgl,Tirol,46.86694,11.02444,1941,1953,bronze,obergurgl,false,2026-09-03
+69,Obervellach,Kärnten,46.93528,13.19444,688,1970,bronze,obervellach,false,2026-09-03
+182,Oberwölz,Steiermark,47.20206,14.28669,842.1,1936,silber,oberwoelz,false,2026-09-03
+196,Patscherkofel,Tirol,47.20889,11.46222,2251,1940,silber,patscherkofel,false,2026-09-03
+169,Pottschach,Niederösterreich,47.70083,16.00806,416.4,1961,bronze,pottschach,false,2026-09-03
+70,Poysdorf-Ost,Niederösterreich,48.66917,16.6375,198,1965,bronze,poysdorf,false,2026-09-03
+71,Preitenegg,Kärnten,46.938333,14.920278,1059,1950,silber,preitenegg,false,2026-09-03
+138,Prutz,Tirol,47.06861,10.66472,871,1967,bronze,prutz,false,2026-09-03
+153,Präbichl,Steiermark,47.52158,14.95416,1215.2,1936,silber,praebichl,false,2026-09-03
+72,Puchberg am Schneeberg,Niederösterreich,47.79028,15.90694,582.8,1949,silber,puchberg,false,2026-09-03
+73,Radstadt-Tandalier,Salzburg,47.38,13.44083,835,1936,silber,radstadt,false,2026-09-03
+75,Ranshofen Braunau,Oberösterreich,48.22417,13.02833,382,1961,bronze,ranshofen,false,2026-09-03
+78,Rauris,Salzburg,47.22353,12.99262,933.8,1875,platin,rauris,false,2026-09-03
+80,Reichenau an der Rax,Niederösterreich,47.69972,15.83694,488,1895,platin,reichenau,false,2026-09-03
+159,Reichersberg,Oberösterreich,48.33111,13.37611,351,1936,silber,reichersberg,false,2026-09-03
+81,Retz Windmühle,Niederösterreich,48.76111,15.94167,320,1946,silber,retz,false,2026-09-03
+76,Reutte,Tirol,47.49444,10.71528,841.8,1936,silber,reutte,false,2026-09-03
+141,Ried im Innkreis,Oberösterreich,48.21722,13.475,427,1936,silber,ried,false,2026-09-03
+127,Rinn,Tirol,47.24917,11.50389,924.1,1957,bronze,rinn,false,2026-09-03
+77,Rohrbach,Oberösterreich,48.56722,14.00444,613,1948,silber,rohrbach,false,2026-09-03
+82,Rudolfshütte,Salzburg,47.13492,12.62594,2317,1961,bronze,rudolfshuette,false,2026-09-03
+131,Salzburg Flughafen,Salzburg,47.78944,13.00861,430,1874,platin,salzburg,false,2026-09-03
+85,Schmittenhöhe,Salzburg,47.32872,12.73794,1955.6,1895,platin,schmittenhoehe,false,2026-09-03
+172,Schoppernau,Vorarlberg,47.31139,10.01778,839,1948,silber,schoppernau,false,2026-09-03
+173,Schröcken,Vorarlberg,47.26167,10.08611,1244,1895,platin,schroecken,false,2026-09-03
+86,Schöckl,Steiermark,47.19861,15.46639,1443,1928,silber,schoeckl,false,2026-09-03
+37,Schöngrabern,Niederösterreich,48.60333,16.06167,253,1936,silber,schoengrabern,false,2026-09-03
+124,Seckau,Steiermark,47.27083,14.77861,872,1895,platin,seckau,false,2026-09-03
+87,Seefeld,Tirol,47.32478,11.17542,1181.9,1948,silber,seefeld,false,2026-09-03
+197,Seibersdorf,Niederösterreich,47.975,16.504444,185,1961,bronze,seibersdorf,false,2026-09-03
+88,Semmering,Niederösterreich,47.63325,15.82839,987.6,1936,silber,semmering,false,2026-09-03
+130,Sillian,Tirol,46.74644,12.42358,1081.4,1948,silber,sillian,false,2026-09-03
+213,Sonnblick,Salzburg,47.05417,12.9575,3109,1886,platin,sonnblick,false,2026-09-03
+90,St.Andrä im Lavanttal,Kärnten,46.76417,14.82806,403,1961,bronze,st-andrae,false,2026-09-03
+119,St.Anton am Arlberg,Tirol,47.13139,10.26667,1304.1,1938,silber,st-anton,false,2026-09-03
+185,St.Jakob im Defereggental,Tirol,46.91694,12.35389,1383,1938,silber,st-jakob,false,2026-09-03
+210,St.Leonhard im Pitztal,Tirol,47.02722,10.86556,1454.4,1967,bronze,st-leonhard,false,2026-09-03
+92,St.Michael im Lungau,Salzburg,47.09447,13.62269,1051.9,1968,bronze,st-michael,false,2026-09-03
+93,St.Pölten Landhaus,Niederösterreich,48.19972,15.63111,273.6,1947,silber,st-poelten,false,2026-09-03
+95,St.Veit an der Glan,Kärnten,46.73917,14.38556,462.6,1968,bronze,st-veit,false,2026-09-03
+109,St.Wolfgang,Oberösterreich,47.74028,13.44194,544,1936,silber,st-wolfgang,false,2026-09-03
+89,Stift Zwettl,Niederösterreich,48.61778,15.20361,502.4,1931,silber,zwettl,true,2026-09-03
+97,Stolzalpe,Steiermark,47.12303,14.18822,1291,1938,silber,stolzalpe,false,2026-09-03
+98,Tamsweg,Salzburg,47.13306,13.80833,1025,1895,platin,tamsweg,false,2026-09-03
+136,Umhausen,Tirol,47.13917,10.92889,1035,1936,silber,umhausen,false,2026-09-03
+100,Villach Stadt,Kärnten,46.61806,13.87389,493,1930,silber,villach,false,2026-09-03
+188,Völkermarkt-Goldbrunnhof,Kärnten,46.670834,14.639167,466,1950,silber,voelkermarkt,false,2026-09-03
+101,Waidhofen an der Ybbs,Niederösterreich,47.94556,14.80972,384,1924,gold,waidhofen-an-der-ybbs,false,2026-09-03
+160,Waizenkirchen,Oberösterreich,48.3464,13.8713,355,1948,silber,waizenkirchen,false,2026-09-03
+103,Weitensfeld,Kärnten,46.84917,14.19083,704,1953,bronze,weitensfeld,false,2026-09-03
+148,Weitra,Niederösterreich,48.70222,14.89861,571.9,1936,silber,weitra,false,2026-09-03
+104,Weyer,Oberösterreich,47.85719,14.66572,426.1,1968,bronze,weyer,false,2026-09-03
+105,Wien Hohe Warte,Wien,48.24861,16.35639,198,1775,platin,wien,true,2026-09-03
+106,Wien Mariabrunn,Wien,48.20694,16.22944,225,1936,silber,wien-mariabrunn,false,2026-09-03
+107,Wien Unterlaa,Wien,48.125,16.41944,200,1963,bronze,wien-unterlaa,false,2026-09-03
+112,Wiener Neustadt Flugplatz,Niederösterreich,47.83233,16.23147,275,1948,silber,neustadt,false,2026-09-03
+111,Wolfsegg,Oberösterreich,48.10542,13.67092,635.1,1951,bronze,wolfsegg,false,2026-09-03
+202,Wörterberg,Burgenland,47.22619,16.09678,403.6,1929,silber,woerterberg,false,2026-09-03
+115,Zeltweg,Steiermark,47.19983,14.74689,677.6,1962,bronze,zeltweg,false,2026-09-03

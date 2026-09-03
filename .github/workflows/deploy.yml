@@ -1,0 +1,74 @@
+name: Build and deploy
+
+# Deploys to schaumamal.at: the build writes _site/CNAME, and GitHub Pages
+# reads the custom domain from the published gh-pages branch. Data is
+# downloaded ON CI (GeoSphere + geoBoundaries) and every SVG is rendered
+# here — this deliberately suspends the "site builds from committed data
+# with no network" convention while the all-station daily-data question
+# is open (the daily panel is too large to commit).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.12'
+      - uses: julia-actions/cache@v2
+
+      - name: Instantiate
+        run: julia --project -e 'using Pkg; Pkg.instantiate()'
+
+      # Focus stations + map metadata + borders, then the full history of
+      # all qualifying stations. Needs the network; raw data is cached only
+      # within this job.
+      - name: Ingest (GeoSphere Data Hub + geoBoundaries)
+        run: julia --project src/ingest/heat_days_stations.jl --all
+
+      # CairoMakie renders headless — no browser, no xvfb.
+      #
+      # In slices, each in its own process. Resident memory grows ~40 MB per
+      # station and is never returned on Linux, so one process for all 138
+      # walked into the 7 GB ceiling this runner has (a private repo gets
+      # 2 cores / 7 GB): run 33443811411 reached 7.3 GB at station 113 and was
+      # killed. A heap-size hint did not help — the growth is outside Julia's
+      # heap — and it made the build 2.5x slower. Six slices peak near 3.8 GB.
+      # (This repo is public, so the runner has 4 cores / 16 GB; the slices
+      # stay because they cost nothing and keep the build honest.)
+      # MALLOC_ARENA_MAX caps glibc's per-thread arenas, which is where the
+      # unreturned memory sits.
+      - name: Build site
+        env:
+          MALLOC_ARENA_MAX: "2"
+        run: |
+          rm -rf _site
+          for i in 0 1 2 3 4 5; do
+            KLIMA_CHUNK="$i/6" julia --project build_prototype.jl
+          done
+          KLIMA_INDEX=1 julia --project build_prototype.jl
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: _site
+          clean: true
+          # _site is ~163 MB (two pre-rendered SVG variants per chart, 138
+          # stations). Keeping gh-pages history would add that much per deploy;
+          # the published site needs no history of its own.
+          single-commit: true
