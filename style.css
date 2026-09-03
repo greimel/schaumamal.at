@@ -1,0 +1,441 @@
+/* --------------------------------------------------------------- base */
+:root {
+  --ink: #1c1b19; --muted: #6d6a64; --rule: #e6e1d8; --paper: #fff;
+  --soft: #faf8f4; --accent: #a63d2a; --link: #1b6ca8;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.55;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%; }
+main { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+a { color: var(--link); }
+
+/* --------------------------------------------------------------- head */
+.kicker { margin: 0 0 6px; font-size: 12px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.kicker a { color: inherit; text-decoration: none; }
+.kicker a:hover { text-decoration: underline; }
+h1 { margin: 0 0 10px; font-size: clamp(1.9rem, 5.5vw, 2.9rem); line-height: 1.12;
+  letter-spacing: -0.02em; font-weight: 700; }
+h2 { margin: 0 0 6px; font-size: 1.25rem; letter-spacing: -0.01em; }
+.lead { margin: 0 0 4px; font-size: clamp(1.02rem, 2.3vw, 1.2rem); color: #3b3935;
+  max-width: 34em; }
+.sub { margin: 0; color: var(--muted); font-size: 15px; }
+
+/* data currency — small, but always above the fold */
+.stand { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 18px 0 0;
+  padding: 0; list-style: none; font-size: 13px; }
+.stand li { background: var(--soft); border: 1px solid var(--rule);
+  border-radius: 999px; padding: 4px 12px; color: var(--muted); }
+.stand b { color: var(--ink); font-weight: 600; }
+
+/* ------------------------------------------------------------- finder */
+.finder { margin: 30px 0 8px; padding: 18px 18px 16px; background: var(--soft);
+  border: 1px solid var(--rule); border-radius: 12px; }
+.finder h2 { margin: 0 0 4px; font-size: 1.05rem; }
+.finder p { margin: 0; color: var(--muted); font-size: 14px; }
+.finder .row { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 8px; }
+.finder button, .finder input {
+  font: inherit; font-size: 15px; padding: 9px 14px; border-radius: 8px;
+  border: 1px solid #cfc8bc; background: var(--paper); color: var(--ink); }
+.finder button { cursor: pointer; font-weight: 600; border-color: var(--ink);
+  background: var(--ink); color: #fff; }
+.finder button:hover { background: #383632; }
+.finder input { flex: 1 1 240px; min-width: 0; }
+.finder .out { margin-top: 6px; font-size: 15px; color: var(--ink); min-height: 1.5em; }
+.finder .out a { font-weight: 600; }
+.finder .privacy { margin-top: 8px; font-size: 12.5px; }
+
+/* --------------------------------------------------- threshold tabs */
+.panelbox { margin-top: 26px; }
+.panelbox > input, .rankbox > input { position: absolute; opacity: 0; pointer-events: none; }
+.tabs { display: flex; gap: 8px; margin: 0 0 10px; flex-wrap: wrap; }
+.tabs label { padding: 7px 14px; border: 1px solid var(--rule); border-radius: 10px;
+  cursor: pointer; font-size: 14px; font-weight: 600; background: var(--paper);
+  user-select: none; line-height: 1.25; text-align: center; }
+.tabs label span { display: block; font-size: 11.5px; font-weight: 500; opacity: 0.65; }
+.tabs label:hover { background: var(--soft); }
+#th-25:checked ~ .tabs label[for="th-25"],
+#rk-25:checked ~ .tabs label[for="rk-25"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+#th-30:checked ~ .tabs label[for="th-30"],
+#rk-30:checked ~ .tabs label[for="rk-30"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+#th-35:checked ~ .tabs label[for="th-35"],
+#rk-35:checked ~ .tabs label[for="rk-35"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+
+
+/* the numbers, below the chart */
+.statlead { margin: 0 0 10px; font-size: 14px; color: var(--muted); }
+.stats { display: grid; gap: 10px; margin: 0 0 6px;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr)); }
+.stat { border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; }
+.stat .k { display: block; font-size: 12px; color: var(--muted); }
+.stat .v { display: block; font-size: 1.75rem; font-weight: 700; line-height: 1.15;
+  font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.stat .u { display: block; font-size: 12px; color: var(--muted); }
+.stat.now { border-color: var(--accent); }
+.stat.now .v { color: var(--accent); }
+.muted { color: var(--muted); }
+.statbox { display: none; margin-top: 22px; }
+.claim { margin: 16px 0 0; max-width: 40em; font-size: 16.5px; line-height: 1.5; }
+.claim.national { margin-top: 10px; }
+#th-25:checked ~ .statbox-25 { display: block; }
+#th-30:checked ~ .statbox-30 { display: block; }
+#th-35:checked ~ .statbox-35 { display: block; }
+
+
+.reelbox { margin-top: 26px; }
+
+/* ------------------------------------------------ reel */
+.reelbox { --bg: #15171c; --faint: #2b2e35; --gray: #4b4f57; --old: #5ab0f0; --hot: #ff7043;
+  --fg: #f3f3f3; --mute: #9aa0a8; position: relative; }
+.reelbox > input { position: absolute; opacity: 0; pointer-events: none; }
+.card { --shift: 0s; position: relative; max-width: 440px; margin: 0 auto; background: var(--bg);
+  color: var(--fg); border-radius: 18px; overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .28); user-select: none; }
+.short-25 > #th-25:checked ~ .card { --shift: -4.6s; }
+.short-30 > #th-30:checked ~ .card { --shift: -4.6s; }
+.short-35 > #th-35:checked ~ .card { --shift: -4.6s; }
+.progress { display: flex; gap: 3px; padding: 10px 12px 0; }
+.progress .seg { flex: 1; height: 3px; background: rgba(255, 255, 255, .22); border-radius: 2px; overflow: hidden; }
+.progress .seg i { display: block; height: 100%; width: 0; background: #fff; }
+.short-25 > #th-25:checked ~ .card .seg:nth-child(1) { display: none; }
+.short-30 > #th-30:checked ~ .card .seg:nth-child(1) { display: none; }
+.short-35 > #th-35:checked ~ .card .seg:nth-child(1) { display: none; }
+/* flat story (station against the trend): the clock jumps to slot 6, so
+   every earlier animation has a negative delay and lands in its end
+   state — the finished chart from the start, only the text plays */
+.flat-25 > #th-25:checked ~ .card { --shift: -31.1s; }
+.flat-30 > #th-30:checked ~ .card { --shift: -31.1s; }
+.flat-35 > #th-35:checked ~ .card { --shift: -31.1s; }
+.flat-25 > #th-25:checked ~ .card .seg:nth-child(-n+5) { display: none; }
+.flat-30 > #th-30:checked ~ .card .seg:nth-child(-n+5) { display: none; }
+.flat-35 > #th-35:checked ~ .card .seg:nth-child(-n+5) { display: none; }
+/* an empty threshold has no story: no progress, no taps, no replay, no view switch */
+.empty-25 > #th-25:checked ~ .card .progress, .empty-25 > #th-25:checked ~ .card .tap, .empty-25 > #th-25:checked ~ .card .head .again { display: none !important; }
+.empty-30 > #th-30:checked ~ .card .progress, .empty-30 > #th-30:checked ~ .card .tap, .empty-30 > #th-30:checked ~ .card .head .again { display: none !important; }
+.empty-35 > #th-35:checked ~ .card .progress, .empty-35 > #th-35:checked ~ .card .tap, .empty-35 > #th-35:checked ~ .card .head .again { display: none !important; }
+.empty-25 > #th-25:checked ~ .allbtn { display: none; }
+.empty-30 > #th-30:checked ~ .allbtn { display: none; }
+.empty-35 > #th-35:checked ~ .allbtn { display: none; }
+.head { display: flex; justify-content: space-between; align-items: center; min-height: 30px;
+  padding: 8px 14px 0; font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--mute); font-weight: 600; }
+.head .h { display: none; }
+#th-25:checked ~ .card .head .h-25 { display: block; }
+#th-30:checked ~ .card .head .h-30 { display: block; }
+#th-35:checked ~ .card .head .h-35 { display: block; }
+.head .again { display: block; position: relative; z-index: 3; cursor: pointer; font-size: 18px;
+  line-height: 1; color: var(--fg); opacity: .8; letter-spacing: 0; }
+.head .again:hover { opacity: 1; }
+.panels { display: grid; }
+.panel { grid-area: 1 / 1; visibility: hidden; }
+.panel .muted { margin: 0; padding: 72px 24px; color: var(--mute); }
+#th-25:checked ~ .card .panel-25 { visibility: visible; }
+#th-30:checked ~ .card .panel-30 { visibility: visible; }
+#th-35:checked ~ .card .panel-35 { visibility: visible; }
+.glyphs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.chart { width: 100%; height: auto; display: none; opacity: 0; transition: opacity .5s ease-out; }
+/* which view shows: phones start from the early window, wide screens with every year */
+@media (max-width: 680px) {
+  .svg-reel { display: block; }
+  #all:checked ~ .card .svg-reel { display: none; }
+  #all:checked ~ .card .svg-all { display: block; }
+  .allbtn .off { display: none; }
+  #all:checked ~ .allbtn .on { display: none; }
+  #all:checked ~ .allbtn .off { display: inline; }
+}
+@media (min-width: 681px) {
+  .card { max-width: 900px; }
+  .svg-wide { display: block; }
+  #all:checked ~ .card { max-width: 440px; }
+  #all:checked ~ .card .svg-wide { display: none; }
+  #all:checked ~ .card .svg-reel { display: block; }
+  .allbtn .on { display: none; }
+  #all:checked ~ .allbtn .on { display: inline; }
+  #all:checked ~ .allbtn .off { display: none; }
+}
+.rcaps { position: relative; min-height: 186px; }
+.capset { position: absolute; inset: 0; visibility: hidden; }
+#th-25:checked ~ .card .capset-25 { visibility: visible; }
+#th-30:checked ~ .card .capset-30 { visibility: visible; }
+#th-35:checked ~ .card .capset-35 { visibility: visible; }
+.rcap { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); margin: 0 auto;
+  max-width: 640px; padding: 0 24px; text-align: center; font-weight: 700;
+  font-size: clamp(17px, 4.8vw, 21px); line-height: 1.3; opacity: 0;
+  transition: opacity .3s ease-out; text-wrap: balance; }
+.rcap .b, .rcap .c { opacity: 0; transition: opacity .35s ease-out; }
+.rcap em { font-style: normal; }
+.rcap em.old { color: var(--old); }
+.rcap em.hot { color: var(--hot); }
+.rcap b { color: #fff; }
+.allbtn { display: block; width: max-content; margin: 14px auto 0; padding: 8px 18px;
+  border: 1px solid var(--rule, #d0d0d0); border-radius: 999px; cursor: pointer;
+  font-size: 14px; font-weight: 600; background: var(--paper, #fff); user-select: none; }
+.allbtn:hover { background: var(--soft, #f2f2f2); }
+.reelnote { max-width: 640px; margin: 10px auto 0; font-size: 13px; color: var(--muted, #666); }
+.reelnote p { margin: 0 0 4px; }
+.reelnote .pn { display: none; }
+#th-25:checked ~ .reelnote .pn-25 { display: block; }
+#th-30:checked ~ .reelnote .pn-30 { display: block; }
+#th-35:checked ~ .reelnote .pn-35 { display: block; }
+.reelnote i { display: inline-block; width: 10px; height: 10px; border-radius: 2px;
+  vertical-align: -1px; margin-right: 4px; }
+.reelnote .li { white-space: nowrap; margin-right: 10px; }   /* breaks only between legend items */
+
+/* the chart's parts: hidden until their frame */
+.chart .band { opacity: 0; transition: opacity .6s ease-in-out; }
+.chart .band.old { fill: var(--old); fill-opacity: .11; }
+.chart .band.new { fill: var(--hot); fill-opacity: .10; }
+.chart .gapspan { fill: url(#reelhatch); }   /* no measurement — not a zero */
+.hatchline { stroke: #fff; stroke-opacity: .12; stroke-width: 2; }   /* stripe faintness lives here */
+.chart .bar { fill: var(--gray); opacity: 0; transition: opacity .4s ease-out, fill .5s ease-in-out; }
+.chart .bar.pre, .chart .bar.gap, .chart .bar.post { fill: var(--faint); }
+.chart .bar.top.cool { fill: var(--old); }
+.chart .bar.top.warm { fill: var(--hot); }
+.chart .bar.new.top { fill: var(--gray); }        /* orange only from slot 3 on, after they appeared */
+.chart .bar.running { stroke: #fff; stroke-width: 1.2px; }
+.chart .hline { stroke: var(--fg); opacity: 0; transition: opacity .5s ease-in-out; }
+.chart .hlbl, .chart .xlbl { fill: var(--mute); opacity: 0; transition: opacity .4s ease-out; }
+.chart .lbl { opacity: 0; transition: opacity .4s ease-out; }
+.chart .lbl.oldrec { fill: var(--old); }
+.chart .lbl.focus { fill: var(--fg); }
+.chart .lbl, .chart .hlbl { paint-order: stroke; stroke: var(--bg); stroke-width: 3px; stroke-linejoin: round; }
+
+/* ---------- auto-play, on the shifted clock: slot 1 is the empty canvas,
+   the chart draws in with „Schau ma uns" (slot 2, second part) ---------- */
+/* slot 2: the sentence first, the chart once it is half read, the line
+   alone, then the second line of text, then the labels that echo it.
+   Delays always as longhands: older Safari drops an animation whose
+   shorthand contains var()/calc() (the stagger rules already do this). */
+#ra:checked ~ .card .chart { animation: fadein .5s ease-out forwards; animation-delay: calc(6.6s + var(--shift)); }
+#ra:checked ~ .card .band.old { animation: fadein .6s ease-in-out forwards; animation-delay: calc(6.6s + var(--shift)); }
+#ra:checked ~ .card .xlbl.old, #ra:checked ~ .card .xlbl.pre { animation: fadein .5s ease-out forwards; animation-delay: calc(7.0s + var(--shift)); }
+#ra:checked ~ .card .bar.old, #ra:checked ~ .card .bar.pre { animation: fadein .45s ease-out forwards;
+  animation-delay: calc(var(--i) / var(--n) * 1.2s + 7.1s + var(--shift)); }
+#ra:checked ~ .card .hline { animation: fadein .5s ease-in-out forwards; animation-delay: calc(9.2s + var(--shift)); }
+#ra:checked ~ .card .hlbl, #ra:checked ~ .card .lbl.oldrec { animation: fadein .5s ease-out forwards; animation-delay: calc(12.0s + var(--shift)); }
+#ra:checked ~ .card .svg-reel .hlbl { animation: fadein .5s ease-out forwards, fadeout .4s ease-out forwards;
+  animation-delay: calc(12.0s + var(--shift)), calc(16.0s + var(--shift)); }
+/* slot 3: the sentence, the orange band, the bars with 2026 last, its
+   label, then the flip to orange — and rest before the next sentence */
+#ra:checked ~ .card .band.new { animation: fadein .6s ease-in-out forwards; animation-delay: calc(16.0s + var(--shift)); }
+#ra:checked ~ .card .xlbl.new { animation: fadein .5s ease-out forwards; animation-delay: calc(16.2s + var(--shift)); }
+#ra:checked ~ .card .bar.new, #ra:checked ~ .card .bar.gap, #ra:checked ~ .card .bar.post {
+  animation: fadein .45s ease-out forwards;
+  animation-delay: calc(var(--i) / var(--n) * 1.2s + 16.2s + var(--shift)); }
+#ra:checked ~ .card .bar.new.top { animation: fadein .45s ease-out forwards, heat .6s ease-in-out forwards;
+  animation-delay: calc(var(--i) / var(--n) * 1.2s + 16.2s + var(--shift)), calc(18.9s + var(--shift)); }
+/* 2026 is not its own beat (Fabian, 2026-09-03): its bar sits at the end
+   of the stagger like any other year, and the label comes with it */
+#ra:checked ~ .card .bar.focus { animation: fadein .5s ease-out forwards; animation-delay: calc(17.4s + var(--shift)); }
+#ra:checked ~ .card .lbl.focus { animation: fadein .5s ease-out forwards; animation-delay: calc(17.4s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="1"] { animation: fadein .35s ease-out forwards, fadeout .25s ease-in forwards;
+  animation-delay: calc(0.15s + var(--shift)), calc(4.35s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="1"] .b { animation: fadein .35s ease-out forwards; animation-delay: calc(3.0s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="1"] .c { animation: fadein .35s ease-out forwards; animation-delay: calc(5.4s + var(--shift)); }
+#ra:checked ~ .card .seg:nth-child(1) i { animation: grow 4.6s linear forwards; animation-delay: calc(0.0s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="2"] { animation: fadein .35s ease-out forwards, fadeout .25s ease-in forwards;
+  animation-delay: calc(4.75s + var(--shift)), calc(13.75s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="2"] .b { animation: fadein .35s ease-out forwards; animation-delay: calc(7.0s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="2"] .c { animation: fadein .35s ease-out forwards; animation-delay: calc(10.0s + var(--shift)); }
+#ra:checked ~ .card .seg:nth-child(2) i { animation: grow 9.4s linear forwards; animation-delay: calc(4.6s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="3"] { animation: fadein .35s ease-out forwards, fadeout .25s ease-in forwards;
+  animation-delay: calc(14.15s + var(--shift)), calc(19.95s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="3"] .b { animation: fadein .35s ease-out forwards; animation-delay: calc(16.4s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="3"] .c { animation: fadein .35s ease-out forwards; animation-delay: calc(19.4s + var(--shift)); }
+#ra:checked ~ .card .seg:nth-child(3) i { animation: grow 6.2s linear forwards; animation-delay: calc(14.0s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="4"] { animation: fadein .35s ease-out forwards, fadeout .25s ease-in forwards;
+  animation-delay: calc(20.35s + var(--shift)), calc(25.45s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="4"] .b { animation: fadein .35s ease-out forwards; animation-delay: calc(22.6s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="4"] .c { animation: fadein .35s ease-out forwards; animation-delay: calc(25.6s + var(--shift)); }
+#ra:checked ~ .card .seg:nth-child(4) i { animation: grow 5.5s linear forwards; animation-delay: calc(20.2s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="5"] { animation: fadein .35s ease-out forwards, fadeout .25s ease-in forwards;
+  animation-delay: calc(25.85s + var(--shift)), calc(30.85s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="5"] .b { animation: fadein .35s ease-out forwards; animation-delay: calc(28.1s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="5"] .c { animation: fadein .35s ease-out forwards; animation-delay: calc(31.1s + var(--shift)); }
+#ra:checked ~ .card .seg:nth-child(5) i { animation: grow 5.4s linear forwards; animation-delay: calc(25.7s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="6"] { animation: fadein .35s ease-out forwards, fadeout .25s ease-in forwards;
+  animation-delay: calc(31.25s + var(--shift)), calc(37.35s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="6"] .b { animation: fadein .35s ease-out forwards; animation-delay: calc(34.3s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="6"] .c { animation: fadein .35s ease-out forwards; animation-delay: calc(36.5s + var(--shift)); }
+#ra:checked ~ .card .seg:nth-child(6) i { animation: grow 6.5s linear forwards; animation-delay: calc(31.1s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="7"] { animation: fadein .35s ease-out forwards;
+  animation-delay: calc(37.75s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="7"] .b { animation: fadein .35s ease-out forwards; animation-delay: calc(40.0s + var(--shift)); }
+#ra:checked ~ .card .rcap[data-f="7"] .c { animation: fadein .35s ease-out forwards; animation-delay: calc(43.0s + var(--shift)); }
+#ra:checked ~ .card .seg:nth-child(7) i { animation: grow 2.8s linear forwards; animation-delay: calc(37.6s + var(--shift)); }
+
+/* the run is over: without the script, a back zone arms (⟳ always shows) */
+#ra:checked ~ .card .tap.prev[data-at="a"] { display: block;
+  animation: arm 0s linear forwards; animation-delay: calc(40.6s + var(--shift)); pointer-events: none; }
+.js > #ra:checked ~ .card .tap[data-at="a"] { display: none; }
+.js > #ra:checked ~ .card .tap.auto { display: block; }
+
+@keyframes fadein  { to { opacity: 1; } }
+@keyframes fadeout { to { opacity: 0; } }
+@keyframes heat    { to { fill: var(--hot); } }
+@keyframes grow    { to { width: 100%; } }
+@keyframes arm     { to { pointer-events: auto; } }
+
+/* ---------- manual frames, by slot ---------- */
+#r2:checked ~ .card .chart, #r3:checked ~ .card .chart, #r4:checked ~ .card .chart, #r5:checked ~ .card .chart, #r6:checked ~ .card .chart, #r7:checked ~ .card .chart, #r2:checked ~ .card .band.old, #r3:checked ~ .card .band.old, #r4:checked ~ .card .band.old, #r5:checked ~ .card .band.old, #r6:checked ~ .card .band.old, #r7:checked ~ .card .band.old, #r2:checked ~ .card .bar.old, #r3:checked ~ .card .bar.old, #r4:checked ~ .card .bar.old, #r5:checked ~ .card .bar.old, #r6:checked ~ .card .bar.old, #r7:checked ~ .card .bar.old, #r2:checked ~ .card .bar.pre, #r3:checked ~ .card .bar.pre, #r4:checked ~ .card .bar.pre, #r5:checked ~ .card .bar.pre, #r6:checked ~ .card .bar.pre, #r7:checked ~ .card .bar.pre, #r2:checked ~ .card .hline, #r3:checked ~ .card .hline, #r4:checked ~ .card .hline, #r5:checked ~ .card .hline, #r6:checked ~ .card .hline, #r7:checked ~ .card .hline,
+#r2:checked ~ .card .xlbl.old, #r3:checked ~ .card .xlbl.old, #r4:checked ~ .card .xlbl.old, #r5:checked ~ .card .xlbl.old, #r6:checked ~ .card .xlbl.old, #r7:checked ~ .card .xlbl.old, #r2:checked ~ .card .xlbl.pre, #r3:checked ~ .card .xlbl.pre, #r4:checked ~ .card .xlbl.pre, #r5:checked ~ .card .xlbl.pre, #r6:checked ~ .card .xlbl.pre, #r7:checked ~ .card .xlbl.pre, #r2:checked ~ .card .svg-all .hlbl, #r3:checked ~ .card .svg-all .hlbl, #r4:checked ~ .card .svg-all .hlbl, #r5:checked ~ .card .svg-all .hlbl, #r6:checked ~ .card .svg-all .hlbl, #r7:checked ~ .card .svg-all .hlbl, #r2:checked ~ .card .svg-wide .hlbl, #r3:checked ~ .card .svg-wide .hlbl, #r4:checked ~ .card .svg-wide .hlbl, #r5:checked ~ .card .svg-wide .hlbl, #r6:checked ~ .card .svg-wide .hlbl, #r7:checked ~ .card .svg-wide .hlbl { opacity: 1; }
+#r2:checked ~ .card .svg-reel .hlbl { opacity: 1; }
+#r2:checked ~ .card .lbl.oldrec, #r3:checked ~ .card .lbl.oldrec, #r4:checked ~ .card .lbl.oldrec, #r5:checked ~ .card .lbl.oldrec, #r6:checked ~ .card .lbl.oldrec, #r7:checked ~ .card .lbl.oldrec { opacity: 1; }
+#r2:checked ~ .card .lbl.oldrec, #r2:checked ~ .card .svg-all .hlbl, #r2:checked ~ .card .svg-wide .hlbl,
+#r2:checked ~ .card .svg-reel .hlbl { transition-delay: 2.4s; }
+#r3:checked ~ .card .band.new, #r4:checked ~ .card .band.new, #r5:checked ~ .card .band.new, #r6:checked ~ .card .band.new, #r7:checked ~ .card .band.new, #r3:checked ~ .card .bar.new, #r4:checked ~ .card .bar.new, #r5:checked ~ .card .bar.new, #r6:checked ~ .card .bar.new, #r7:checked ~ .card .bar.new, #r3:checked ~ .card .bar.gap, #r4:checked ~ .card .bar.gap, #r5:checked ~ .card .bar.gap, #r6:checked ~ .card .bar.gap, #r7:checked ~ .card .bar.gap, #r3:checked ~ .card .bar.post, #r4:checked ~ .card .bar.post, #r5:checked ~ .card .bar.post, #r6:checked ~ .card .bar.post, #r7:checked ~ .card .bar.post, #r3:checked ~ .card .xlbl.new, #r4:checked ~ .card .xlbl.new, #r5:checked ~ .card .xlbl.new, #r6:checked ~ .card .xlbl.new, #r7:checked ~ .card .xlbl.new { opacity: 1; }
+#r3:checked ~ .card .bar.new, #r4:checked ~ .card .bar.new, #r5:checked ~ .card .bar.new, #r6:checked ~ .card .bar.new, #r7:checked ~ .card .bar.new, #r3:checked ~ .card .bar.gap, #r4:checked ~ .card .bar.gap, #r5:checked ~ .card .bar.gap, #r6:checked ~ .card .bar.gap, #r7:checked ~ .card .bar.gap, #r3:checked ~ .card .bar.post, #r4:checked ~ .card .bar.post, #r5:checked ~ .card .bar.post, #r6:checked ~ .card .bar.post, #r7:checked ~ .card .bar.post {
+  transition-delay: calc(var(--i) / var(--n) * 0.9s), 0s; }
+#r3:checked ~ .card .bar.new.top, #r4:checked ~ .card .bar.new.top, #r5:checked ~ .card .bar.new.top, #r6:checked ~ .card .bar.new.top, #r7:checked ~ .card .bar.new.top { fill: var(--hot); transition-delay: calc(var(--i) / var(--n) * 0.9s), 1.3s; }
+#r3:checked ~ .card .bar.focus, #r4:checked ~ .card .bar.focus, #r5:checked ~ .card .bar.focus, #r6:checked ~ .card .bar.focus, #r7:checked ~ .card .bar.focus, #r3:checked ~ .card .lbl.focus, #r4:checked ~ .card .lbl.focus, #r5:checked ~ .card .lbl.focus, #r6:checked ~ .card .lbl.focus, #r7:checked ~ .card .lbl.focus { opacity: 1; transition-delay: 0.9s; }
+#r1:checked ~ .card .rcap[data-f="1"] { opacity: 1; }
+#r1:checked ~ .card .rcap[data-f="1"] .b { opacity: 1; transition-delay: 1.4s; }
+#r1:checked ~ .card .rcap[data-f="1"] .c { opacity: 1; transition-delay: 2.4s; }
+#r1:checked ~ .card .seg:nth-child(-n+1) i { width: 100%; }
+#r2:checked ~ .card .rcap[data-f="2"] { opacity: 1; }
+#r2:checked ~ .card .rcap[data-f="2"] .b { opacity: 1; transition-delay: 1.4s; }
+#r2:checked ~ .card .rcap[data-f="2"] .c { opacity: 1; transition-delay: 2.4s; }
+#r2:checked ~ .card .seg:nth-child(-n+2) i { width: 100%; }
+#r3:checked ~ .card .rcap[data-f="3"] { opacity: 1; }
+#r3:checked ~ .card .rcap[data-f="3"] .b { opacity: 1; transition-delay: 1.4s; }
+#r3:checked ~ .card .rcap[data-f="3"] .c { opacity: 1; transition-delay: 2.4s; }
+#r3:checked ~ .card .seg:nth-child(-n+3) i { width: 100%; }
+#r4:checked ~ .card .rcap[data-f="4"] { opacity: 1; }
+#r4:checked ~ .card .rcap[data-f="4"] .b { opacity: 1; transition-delay: 1.4s; }
+#r4:checked ~ .card .rcap[data-f="4"] .c { opacity: 1; transition-delay: 2.4s; }
+#r4:checked ~ .card .seg:nth-child(-n+4) i { width: 100%; }
+#r5:checked ~ .card .rcap[data-f="5"] { opacity: 1; }
+#r5:checked ~ .card .rcap[data-f="5"] .b { opacity: 1; transition-delay: 1.4s; }
+#r5:checked ~ .card .rcap[data-f="5"] .c { opacity: 1; transition-delay: 2.4s; }
+#r5:checked ~ .card .seg:nth-child(-n+5) i { width: 100%; }
+#r6:checked ~ .card .rcap[data-f="6"] { opacity: 1; }
+#r6:checked ~ .card .rcap[data-f="6"] .b { opacity: 1; transition-delay: 1.4s; }
+#r6:checked ~ .card .rcap[data-f="6"] .c { opacity: 1; transition-delay: 2.4s; }
+#r6:checked ~ .card .seg:nth-child(-n+6) i { width: 100%; }
+#r7:checked ~ .card .rcap[data-f="7"] { opacity: 1; }
+#r7:checked ~ .card .rcap[data-f="7"] .b { opacity: 1; transition-delay: 1.4s; }
+#r7:checked ~ .card .rcap[data-f="7"] .c { opacity: 1; transition-delay: 2.4s; }
+#r7:checked ~ .card .seg:nth-child(-n+7) i { width: 100%; }
+
+
+/* ---------- tap zones: left third back, the rest forward, like stories ---------- */
+.tap { position: absolute; top: 44px; bottom: 0; display: none; cursor: pointer; margin: 0;
+  z-index: 2; -webkit-tap-highlight-color: transparent; }
+.tap.prev { left: 0; width: 36%; }
+.tap.next { right: 0; width: 64%; }
+.tap::after { position: absolute; bottom: 10px; font-size: 28px; line-height: 1;
+  color: rgba(255, 255, 255, .4); }
+.tap.prev::after { content: "‹"; left: 16px; }
+.tap.next::after { content: "›"; right: 16px; }
+.tap:hover::after { color: rgba(255, 255, 255, .85); }
+#r1:checked ~ .card .tap.next[data-at="1"] { display: block; }
+#r2:checked ~ .card .tap.prev[data-at="2"] { display: block; }
+#r2:checked ~ .card .tap.next[data-at="2"] { display: block; }
+#r3:checked ~ .card .tap.prev[data-at="3"] { display: block; }
+#r3:checked ~ .card .tap.next[data-at="3"] { display: block; }
+#r4:checked ~ .card .tap.prev[data-at="4"] { display: block; }
+#r4:checked ~ .card .tap.next[data-at="4"] { display: block; }
+#r5:checked ~ .card .tap.prev[data-at="5"] { display: block; }
+#r5:checked ~ .card .tap.next[data-at="5"] { display: block; }
+#r6:checked ~ .card .tap.prev[data-at="6"] { display: block; }
+#r6:checked ~ .card .tap.next[data-at="6"] { display: block; }
+#r7:checked ~ .card .tap.prev[data-at="7"] { display: block; }
+
+.short-25 > #th-25:checked ~ #r2:checked ~ .card .tap.prev[data-at="2"] { display: none; }
+.short-30 > #th-30:checked ~ #r2:checked ~ .card .tap.prev[data-at="2"] { display: none; }
+.short-35 > #th-35:checked ~ #r2:checked ~ .card .tap.prev[data-at="2"] { display: none; }
+.flat-25 > #th-25:checked ~ #r6:checked ~ .card .tap.prev[data-at="6"] { display: none; }
+.flat-30 > #th-30:checked ~ #r6:checked ~ .card .tap.prev[data-at="6"] { display: none; }
+.flat-35 > #th-35:checked ~ #r6:checked ~ .card .tap.prev[data-at="6"] { display: none; }
+
+/* Reduced motion: the story still plays — same timeline, same frames, but
+   every change is an instant step instead of a fade. The reel has no
+   spatial motion (nothing slides, zooms or scrolls); what the setting
+   asks us to drop is the easing, not the narrative. Durations go to zero,
+   the delays — the timeline — stay. */
+@media (prefers-reduced-motion: reduce) {
+  .reelbox *, .reelbox *::before, .reelbox *::after {
+    animation-duration: 0s !important; transition-duration: 0s !important; }
+}
+
+
+/* ---------------------------------------------------------------- map */
+.map { width: 100%; height: auto; display: block; margin-top: 6px; }
+.map .land { fill: #f4f1ec; stroke: #cfc7ba; stroke-width: 0.8; }
+.map .border { fill: none; stroke: #8a8175; stroke-width: 1.2; }
+.map .dot { stroke: #fff; stroke-width: 1; }
+.map a { cursor: pointer; }
+.map a .hit { fill: transparent; }
+.map a .dot { stroke: #555; stroke-width: 1.2; }
+.map a:hover .dot, .map a:focus .dot { stroke: #111; stroke-width: 2.5; r: 8px; }
+.map .hlabel { display: none; font-size: 13px; font-weight: 600; fill: #111;
+  paint-order: stroke; stroke: #fff; stroke-width: 3.5px; pointer-events: none; }
+/* which label shows: per-station sibling rules in a <style> inside the SVG */
+.map .nopage .dot { opacity: 0.55; }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px;
+  color: var(--muted); margin: 4px 0 0; align-items: center; }
+.legend .dot { display: inline-block; width: 11px; height: 11px;
+  border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+
+/* ------------------------------------------------------- this year's ranking */
+.rankbox { margin-top: 34px; position: relative; }
+.rankbox h2 { margin-bottom: 10px; }
+.nclaim { display: none; }
+#rk-25:checked ~ .nclaim-25 { display: block; }
+#rk-30:checked ~ .nclaim-30 { display: block; }
+#rk-35:checked ~ .nclaim-35 { display: block; }
+
+.rankbox .nclaim .claim { margin-top: 4px; }
+.rank { display: none; }
+#rk-25:checked ~ .rank-25 { display: grid; }
+#rk-30:checked ~ .rank-30 { display: grid; }
+#rk-35:checked ~ .rank-35 { display: grid; }
+
+.rank { grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px 28px; }
+.rank h3 { margin: 0 0 4px; font-size: 13px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--muted); }
+.rank ol { margin: 0; padding: 0; list-style: none; }
+.rank li { display: flex; align-items: baseline; gap: 10px; font-size: 15px;
+  line-height: 1.75; border-top: 1px solid var(--rule); }
+.rank li:first-child { border-top: 0; }
+.rank .n { flex: none; width: 4.8em; text-align: right; font-weight: 700;
+  font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rank .n small { font-weight: 400; color: var(--muted); font-size: 12px; }
+.rank .who { flex: 1; min-width: 0; }
+.rank .where { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+.rank .more { color: var(--muted); font-size: 13px; }
+.rank .more .n { visibility: hidden; }
+.rankbox .note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
+
+/* --------------------------------------------------- station listing */
+.lgroup { margin: 14px 0; }
+.lgroup h3 { margin: 0 0 4px; font-size: 13px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--muted); }
+.lgroup ul { margin: 0; padding: 0; list-style: none;
+  columns: 3 190px; column-gap: 22px; }
+.lgroup li { break-inside: avoid; font-size: 14.5px; line-height: 1.75; }
+.lgroup li span { color: var(--muted); font-size: 12.5px; }
+
+/* ------------------------------------------------- collapsible detail */
+.box { border-top: 1px solid var(--rule); }
+.details-wrap .box:last-of-type { border-bottom: 1px solid var(--rule); }
+.box > summary { cursor: pointer; padding: 14px 2px; font-weight: 600;
+  font-size: 15px; list-style: none; display: flex; align-items: center; gap: 8px; }
+.box > summary::-webkit-details-marker { display: none; }
+.box > summary::before { content: "+"; color: var(--muted); font-weight: 400;
+  font-size: 18px; width: 14px; }
+.box[open] > summary::before { content: "–"; }
+.box > summary:hover { color: var(--accent); }
+.boxbody { padding: 0 2px 18px 24px; font-size: 14.5px; color: #3b3935;
+  max-width: 42em; }
+.boxbody p { margin: 0 0 0.85em; }
+.boxbody p:last-child { margin-bottom: 0; }
+.boxbody dt { font-weight: 600; margin-top: 0.7em; }
+.boxbody dd { margin: 0; color: var(--muted); }
+.details-wrap { margin-top: 34px; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
+  font-size: 13px; color: var(--muted); }
+footer p { margin: 0; max-width: 52em; }
+footer a { color: inherit; }
