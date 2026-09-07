@@ -580,7 +580,7 @@ function reel_css(; thresholds = [25, 30, 35])
     .chart .bar.pre, .chart .bar.gap, .chart .bar.post { fill: var(--faint); }
     .chart .bar.top.cool { fill: var(--old); }
     .chart .bar.top.warm { fill: var(--hot); }
-    .chart .bar.new.top { fill: var(--gray); }        /* orange only from slot 3 on, after they appeared */
+    .chart .bar.new.top, .chart .bar.focus.top { fill: var(--gray); }   /* orange only from slot 3 on, after they appeared — the focus year too */
     .chart .bar.running { stroke: #fff; stroke-width: 1.2px; }
     .chart .hline { stroke: var(--fg); opacity: 0; transition: opacity .5s ease-in-out; }
     .chart .hlbl, .chart .xlbl { fill: var(--mute); opacity: 0; transition: opacity .4s ease-out; }
@@ -614,8 +614,13 @@ function reel_css(; thresholds = [25, 30, 35])
     #ra:checked ~ .card .bar.new.top { animation: fadein .45s ease-out forwards, heat .6s ease-in-out forwards;
       animation-delay: calc(var(--i) / var(--n) * 1.2s + $(F[3] + 2.2)s + var(--shift)), $(at(F[3] + 4.9)); }
     /* 2026 is not its own beat (Fabian, 2026-09-03): its bar sits at the end
-       of the stagger like any other year, and the label comes with it */
+       of the stagger like any other year, and the label comes with it. At
+       fallback-window stations 2026 is a `focus` bar, not `new`, and a warm
+       one used to arrive already orange — 1.5 s before the flip (Fabian,
+       2026-09-07, Völkermarkt); now it heats up with the others. */
     #ra:checked ~ .card .bar.focus { animation: fadein .5s ease-out forwards; animation-delay: $(at(F[3] + 3.4)); }
+    #ra:checked ~ .card .bar.focus.top { animation: fadein .5s ease-out forwards, heat .6s ease-in-out forwards;
+      animation-delay: $(at(F[3] + 3.4)), $(at(F[3] + 4.9)); }
     #ra:checked ~ .card .lbl.focus { animation: fadein .5s ease-out forwards; animation-delay: $(at(F[3] + 3.4)); }
     $(join(["""
     #ra:checked ~ .card .rcap[data-f="$k"] { animation: fadein .35s ease-out forwards$(k < nf ? ", fadeout .25s ease-in forwards" : "");
@@ -648,6 +653,7 @@ function reel_css(; thresholds = [25, 30, 35])
       transition-delay: calc(var(--i) / var(--n) * 0.9s), 0s; }
     $(from(3, ".bar.new.top")) { fill: var(--hot); transition-delay: calc(var(--i) / var(--n) * 0.9s), 1.3s; }
     $(from(3, ".bar.focus")), $(from(3, ".lbl.focus")) { opacity: 1; transition-delay: 0.9s; }
+    $(from(3, ".bar.focus.top")) { fill: var(--hot); transition-delay: 0.9s, 1.3s; }
     $(join(["""
     #r$k:checked ~ .card .rcap[data-f="$k"] { opacity: 1; }
     #r$k:checked ~ .card .rcap[data-f="$k"] .b { opacity: 1; transition-delay: 1.4s; }
