@@ -501,7 +501,10 @@ function reel_css(; thresholds = [25, 30, 35])
       color: var(--fg); border-radius: 18px; overflow: hidden;
       box-shadow: 0 12px 32px rgba(0, 0, 0, .28); user-select: none; }
     $(per_t(t -> ".short-$t > #th-$t:checked ~ .card { --shift: -$(F[2])s; }"))
-    .progress { display: flex; gap: 3px; padding: 10px 12px 0; }
+    /* the chrome — name line, replay, progress — sits below the captions
+       (Fabian, 2026-09-07): chart and subtitles are what a phone shows first */
+    .body { position: relative; }
+    .progress { display: flex; gap: 3px; padding: 0 12px 10px; }
     .progress .seg { flex: 1; height: 3px; background: rgba(255, 255, 255, .22); border-radius: 2px; overflow: hidden; }
     .progress .seg i { display: block; height: 100%; width: 0; background: #fff; }
     $(per_t(t -> ".short-$t > #th-$t:checked ~ .card .seg:nth-child(1) { display: none; }"))
@@ -513,15 +516,19 @@ function reel_css(; thresholds = [25, 30, 35])
     /* an empty threshold has no story: no progress, no taps, no replay, no view switch */
     $(per_t(t -> ".empty-$t > #th-$t:checked ~ .card .progress, .empty-$t > #th-$t:checked ~ .card .tap, .empty-$t > #th-$t:checked ~ .card .head .again { display: none !important; }"))
     $(per_t(t -> ".empty-$t > #th-$t:checked ~ .allbtn { display: none; }"))
-    .head { display: flex; justify-content: space-between; align-items: center; min-height: 30px;
-      padding: 8px 14px 0; font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    .head { display: flex; justify-content: space-between; align-items: center; min-height: 24px;
+      padding: 6px 14px 8px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
       color: var(--mute); font-weight: 600; }
+    /* a long name wraps between name and term, never inside the term; narrow
+       cards set the line smaller so most names stay on one line */
+    .head .st, .head .tm { white-space: nowrap; }
+    @media (max-width: 430px) { .head { font-size: 10px; letter-spacing: .08em; } }
     .head .h { display: none; }
     $(per_t(t -> "#th-$t:checked ~ .card .head .h-$t { display: block; }"))
     .head .again { display: block; position: relative; z-index: 3; cursor: pointer; font-size: 18px;
       line-height: 1; color: var(--fg); opacity: .8; letter-spacing: 0; }
     .head .again:hover { opacity: 1; }
-    .panels { display: grid; }
+    .panels { display: grid; padding-top: 8px; }
     .panel { grid-area: 1 / 1; visibility: hidden; }
     .panel .muted { margin: 0; padding: 72px 24px; color: var(--mute); }
     $(per_t(t -> "#th-$t:checked ~ .card .panel-$t { visibility: visible; }"))
@@ -546,7 +553,9 @@ function reel_css(; thresholds = [25, 30, 35])
       #all:checked ~ .allbtn .on { display: inline; }
       #all:checked ~ .allbtn .off { display: none; }
     }
-    .rcaps { position: relative; min-height: 186px; }
+    /* fixed, so the card never jumps between frames; the longest caption on
+       the site is 94 px at 375 px and 133 px at 320 px (survey 2026-09-07) */
+    .rcaps { position: relative; min-height: 150px; }
     .capset { position: absolute; inset: 0; visibility: hidden; }
     $(per_t(t -> "#th-$t:checked ~ .card .capset-$t { visibility: visible; }"))
     .rcap { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); margin: 0 auto;
@@ -662,7 +671,7 @@ function reel_css(; thresholds = [25, 30, 35])
     """ for k in 1:nf]))
 
     /* ---------- tap zones: left third back, the rest forward, like stories ---------- */
-    .tap { position: absolute; top: 44px; bottom: 0; display: none; cursor: pointer; margin: 0;
+    .tap { position: absolute; top: 0; bottom: 0; display: none; cursor: pointer; margin: 0;
       z-index: 2; -webkit-tap-highlight-color: transparent; }
     .tap.prev { left: 0; width: 36%; }
     .tap.next { right: 0; width: 64%; }
@@ -731,7 +740,8 @@ patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="hatchli
         rinputs = "<input type=\"radio\" name=\"r\" id=\"ra\" checked>\n" *
                   join(["<input type=\"radio\" name=\"r\" id=\"r$k\">" for k in 1:REEL_NF], "\n") *
                   "\n<input type=\"checkbox\" id=\"all\">"
-        heads = join(["<span class=\"h h-$t\">$station · $(day_term(t)) pro Jahr</span>" for t in thresholds])
+        heads = join(["<span class=\"h h-$t\"><span class=\"st\">$station ·</span> <span class=\"tm\">$(day_term(t)) pro Jahr</span></span>"
+                      for t in thresholds])
         panels = join(["<div class=\"panel panel-$t\">" *
                        (t in live ? svgd[(t, :reel)] * svgd[(t, :all)] * svgd[(t, :wide)] : reel_empty_html(t)) * "</div>"
                        for t in thresholds], "\n")
@@ -757,8 +767,7 @@ patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="hatchli
         $rinputs
         <div class="tabs">$tabs</div>
         <div class="card">
-        <div class="progress">$(join(["<span class=\"seg\"><i></i></span>" for _ in 1:REEL_NF]))</div>
-        <div class="head"><span>$heads</span><label class="again" for="ra" title="Neu abspielen">⟳</label></div>
+        <div class="body">
         <div class="panels">$hatchdef$(dd.defs)
         $panels
         </div>
@@ -766,6 +775,9 @@ patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="hatchli
         $capsets
         </div>
         $taps
+        </div>
+        <div class="head"><span>$heads</span><label class="again" for="ra" title="Neu abspielen">⟳</label></div>
+        <div class="progress">$(join(["<span class=\"seg\"><i></i></span>" for _ in 1:REEL_NF]))</div>
         </div>
         <label class="allbtn" for="all"><span class="on">Alle Jahre anzeigen</span><span class="off">Nur ab $(m0.e0) anzeigen</span></label>
         <div class="reelnote">

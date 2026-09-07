@@ -259,8 +259,10 @@ $(reel_css(; thresholds = THRESHOLDS))
    three threshold tabs share one row — the slack in their padding is what
    lets „Extrem heiße Tage" fit. Below 360 px they may wrap again. */
 @media (max-width: 430px) {
-  main { padding: 24px 16px 64px; }
-  .reelbox { margin-top: 18px; }
+  main { padding: 20px 16px 64px; }
+  h1 { margin-bottom: 6px; }
+  .sub { font-size: 14px; }
+  .reelbox { margin-top: 14px; }
   .tabs { gap: 6px; flex-wrap: nowrap; }
   .tabs label { flex: 1 1 auto; min-width: 0; padding: 7px 5px; font-size: 13.5px;
     white-space: nowrap; }
