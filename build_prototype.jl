@@ -189,10 +189,14 @@ h2 { margin: 0 0 6px; font-size: 1.25rem; letter-spacing: -0.01em; }
 .lead { margin: 0 0 4px; font-size: clamp(1.02rem, 2.3vw, 1.2rem); color: #3b3935;
   max-width: 34em; }
 .sub { margin: 0; color: var(--muted); font-size: 15px; }
+.sub .nw { white-space: nowrap; }
 
-/* data currency — small, but always above the fold */
+/* data currency — small; at the top of the index, under the chart on the
+   station pages, where the reel is what the phone shows first (Fabian,
+   2026-09-07) */
 .stand { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 18px 0 0;
   padding: 0; list-style: none; font-size: 13px; }
+.reelbox + .stand { margin-top: 28px; }
 .stand li { background: var(--soft); border: 1px solid var(--rule);
   border-radius: 999px; padding: 4px 12px; color: var(--muted); }
 .stand b { color: var(--ink); font-weight: 600; }
@@ -248,6 +252,21 @@ $(join(["#th-$t:checked ~ .statbox-$t { display: block; }\n" for t in THRESHOLDS
 .reelbox { margin-top: 26px; }
 
 $(reel_css(; thresholds = THRESHOLDS))
+
+/* ------------------------------------------------------------- phones */
+/* Fabian's phone is an iPhone SE: 375 px wide, about 560 px of viewport.
+   The chart must show without scrolling, so the head is tighter, and the
+   three threshold tabs share one row — the slack in their padding is what
+   lets „Extrem heiße Tage" fit. Below 360 px they may wrap again. */
+@media (max-width: 430px) {
+  main { padding: 24px 16px 64px; }
+  .reelbox { margin-top: 18px; }
+  .tabs { gap: 6px; flex-wrap: nowrap; }
+  .tabs label { flex: 1 1 auto; min-width: 0; padding: 7px 5px; font-size: 13.5px;
+    white-space: nowrap; }
+  .tabs label span { font-size: 11px; }
+}
+@media (max-width: 359px) { .tabs { flex-wrap: wrap; } }
 
 /* ---------------------------------------------------------------- map */
 .map { width: 100%; height: auto; display: block; margin-top: 6px; }
@@ -379,7 +398,7 @@ $script$(counter_html(path))
 </html>
 """
 
-"The two dates the reader needs to trust the page, as pills near the top."
+"The two dates the reader needs to trust the page, as pills: at the top of the index, under the chart on station pages."
 stand_bar(until, updated) = """
 <ul class="stand">
 <li><b>Daten bis</b> $until</li>
@@ -745,10 +764,10 @@ function station_page(st, annual, retrieved, data_until, nat)
     body = """
     <p class="kicker"><a href="../">← $KICKER</a></p>
     <h1>$(st.name)</h1>
-    <p class="sub">$(st.state)$alt · Messreihe $span</p>
-    $(stand_bar(data_until, retrieved))
+    <p class="sub">$(st.state)$alt · <span class="nw">Messreihe $span</span></p>
 
     $reel
+    $(stand_bar(data_until, retrieved))
 
     <div class="details-wrap">
     $(collapsible("Wie lese ich das Diagramm?", REEL_HINT))
