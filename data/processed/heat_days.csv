@@ -56,7 +56,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 165,Abtenau,2023,365,92,63,20,2,35.6,true
 165,Abtenau,2024,366,92,69,18,0,34.4,true
 165,Abtenau,2025,365,92,57,18,0,33.4,true
-165,Abtenau,2026,242,91,69,34,6,36.7,true
+165,Abtenau,2026,304,92,80,36,6,36.7,true
 2,Aigen im Ennstal,1939,306,92,32,3,0,31.5,true
 2,Aigen im Ennstal,1940,366,92,18,1,0,30.5,true
 2,Aigen im Ennstal,1941,365,92,31,1,0,30.5,true
@@ -127,7 +127,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 2,Aigen im Ennstal,2023,365,92,60,16,0,33.9,true
 2,Aigen im Ennstal,2024,366,92,76,20,0,33.2,true
 2,Aigen im Ennstal,2025,365,92,60,19,0,34.2,true
-2,Aigen im Ennstal,2026,242,91,66,27,3,35.4,true
+2,Aigen im Ennstal,2026,304,92,75,29,3,35.4,true
 4,Amstetten,1936,366,92,22,0,0,29.0,true
 4,Amstetten,1937,365,92,27,1,0,30.1,true
 4,Amstetten,1938,365,92,31,1,0,30.5,true
@@ -215,7 +215,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 4,Amstetten,2023,365,92,81,32,0,34.7,true
 4,Amstetten,2024,366,92,92,39,0,34.6,true
 4,Amstetten,2025,365,92,72,19,0,34.0,true
-4,Amstetten,2026,242,91,90,48,13,39.6,true
+4,Amstetten,2026,303,92,106,50,13,39.6,true
 162,Aspach,1969,122,0,0,0,0,24.7,false
 162,Aspach,1970,365,92,32,1,0,30.0,true
 162,Aspach,1971,365,92,37,6,0,33.4,true
@@ -272,7 +272,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 162,Aspach,2023,365,92,68,20,1,35.4,true
 162,Aspach,2024,366,92,76,21,0,32.7,true
 162,Aspach,2025,365,92,64,17,0,33.5,true
-162,Aspach,2026,237,86,73,31,5,36.4,false
+162,Aspach,2026,299,87,79,33,5,36.4,false
 170,Aspang,1948,253,92,33,1,0,31.4,true
 170,Aspang,1949,365,92,33,4,0,30.9,true
 170,Aspang,1950,365,92,57,15,2,35.5,true
@@ -351,7 +351,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 170,Aspang,2023,365,92,67,13,0,33.7,true
 170,Aspang,2024,366,92,88,32,0,33.3,true
 170,Aspang,2025,365,92,63,17,0,34.0,true
-170,Aspang,2026,242,91,78,31,5,36.5,true
+170,Aspang,2026,304,92,90,33,5,36.5,true
 6,Bad Bleiberg,1938,365,92,20,0,0,28.7,true
 6,Bad Bleiberg,1939,365,92,16,0,0,28.8,true
 6,Bad Bleiberg,1940,366,92,11,0,0,27.9,true
@@ -437,7 +437,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 6,Bad Bleiberg,2023,365,92,35,7,0,30.8,true
 6,Bad Bleiberg,2024,366,92,53,4,0,32.3,true
 6,Bad Bleiberg,2025,365,92,44,7,0,33.1,true
-6,Bad Bleiberg,2026,242,91,67,12,0,33.1,true
+6,Bad Bleiberg,2026,304,92,73,12,0,33.1,true
 21,Bad Eisenkappel,1967,306,92,44,5,0,32.0,true
 21,Bad Eisenkappel,1968,366,92,29,5,0,34.0,true
 21,Bad Eisenkappel,1969,59,0,0,0,0,7.0,false
@@ -493,7 +493,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 21,Bad Eisenkappel,2023,365,92,62,15,0,32.7,true
 21,Bad Eisenkappel,2024,366,92,80,29,0,33.5,true
 21,Bad Eisenkappel,2025,365,92,74,27,1,35.9,true
-21,Bad Eisenkappel,2026,242,91,83,42,5,36.5,true
+21,Bad Eisenkappel,2026,304,92,92,43,5,36.5,true
 7,Bad Gastein,1935,365,92,36,4,0,31.9,true
 7,Bad Gastein,1938,365,92,26,1,0,30.0,true
 7,Bad Gastein,1939,365,92,29,0,0,29.8,true
@@ -582,7 +582,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 7,Bad Gastein,2023,365,92,46,9,0,33.4,true
 7,Bad Gastein,2024,366,92,49,10,0,32.9,true
 7,Bad Gastein,2025,365,92,44,11,0,31.9,true
-7,Bad Gastein,2026,242,91,54,15,0,34.3,true
+7,Bad Gastein,2026,304,92,58,15,0,34.3,true
 8,Bad Gleichenberg,1936,366,92,52,4,0,31.0,true
 8,Bad Gleichenberg,1937,290,92,55,0,0,29.9,true
 8,Bad Gleichenberg,1938,365,92,45,6,0,30.8,true
@@ -668,7 +668,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 8,Bad Gleichenberg,2023,365,92,85,19,0,33.6,true
 8,Bad Gleichenberg,2024,366,92,96,39,0,34.0,true
 8,Bad Gleichenberg,2025,365,92,91,30,2,35.2,true
-8,Bad Gleichenberg,2026,242,91,84,42,8,37.2,true
+8,Bad Gleichenberg,2026,304,92,96,46,8,37.2,true
 9,Bad Goisern,1941,184,62,25,2,0,33.3,false
 9,Bad Goisern,1942,340,67,35,4,0,31.3,false
 9,Bad Goisern,1943,365,92,42,7,0,34.5,true
@@ -736,7 +736,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 9,Bad Goisern,2023,365,92,78,26,2,36.2,true
 9,Bad Goisern,2024,366,92,79,27,0,33.4,true
 9,Bad Goisern,2025,365,92,68,21,0,34.2,true
-9,Bad Goisern,2026,242,91,83,45,10,38.9,true
+9,Bad Goisern,2026,304,92,96,48,10,38.9,true
 132,Bad Ischl,1936,366,92,28,2,0,30.2,true
 132,Bad Ischl,1937,365,92,36,1,0,31.8,true
 132,Bad Ischl,1938,334,92,39,2,0,31.0,true
@@ -827,7 +827,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 132,Bad Ischl,2023,365,92,69,22,1,35.7,true
 132,Bad Ischl,2024,366,92,70,18,0,32.5,true
 132,Bad Ischl,2025,365,92,60,17,0,33.4,true
-132,Bad Ischl,2026,242,91,77,33,8,37.7,true
+132,Bad Ischl,2026,304,92,89,36,8,37.7,true
 10,Bad Mitterndorf,1970,365,92,35,0,0,29.5,true
 10,Bad Mitterndorf,1971,365,92,32,2,0,31.7,true
 10,Bad Mitterndorf,1972,366,92,22,5,0,32.0,true
@@ -884,7 +884,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 10,Bad Mitterndorf,2023,365,92,59,17,0,32.8,true
 10,Bad Mitterndorf,2024,366,92,64,17,0,32.2,true
 10,Bad Mitterndorf,2025,365,92,53,14,0,32.9,true
-10,Bad Mitterndorf,2026,242,91,62,27,3,35.6,true
+10,Bad Mitterndorf,2026,304,92,67,29,3,35.6,true
 13,Bernstein,1949,61,0,0,0,0,13.2,false
 13,Bernstein,1950,365,92,52,14,2,35.0,true
 13,Bernstein,1951,365,92,45,3,1,36.2,true
@@ -962,7 +962,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 13,Bernstein,2023,365,92,45,5,0,31.8,true
 13,Bernstein,2024,366,92,67,18,0,32.6,true
 13,Bernstein,2025,365,92,56,11,0,32.5,true
-13,Bernstein,2026,242,91,66,22,2,35.1,true
+13,Bernstein,2026,304,92,73,23,2,35.1,true
 14,Bischofshofen,1936,366,92,33,3,0,31.8,true
 14,Bischofshofen,1937,365,92,41,4,0,32.2,true
 14,Bischofshofen,1938,365,92,39,3,0,30.5,true
@@ -1035,7 +1035,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 14,Bischofshofen,2023,365,92,68,20,0,34.5,true
 14,Bischofshofen,2024,366,92,66,17,0,34.3,true
 14,Bischofshofen,2025,365,92,56,18,0,34.7,true
-14,Bischofshofen,2026,242,91,73,33,6,37.1,true
+14,Bischofshofen,2026,304,92,86,35,6,37.1,true
 181,Bludenz,1936,366,92,13,0,0,27.0,true
 181,Bludenz,1937,365,92,25,4,0,32.6,true
 181,Bludenz,1938,365,92,30,1,0,30.0,true
@@ -1087,7 +1087,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 181,Bludenz,2023,365,92,95,28,2,37.7,true
 181,Bludenz,2024,366,92,76,22,0,33.5,true
 181,Bludenz,2025,365,92,65,23,0,34.0,true
-181,Bludenz,2026,242,91,85,52,14,37.4,true
+181,Bludenz,2026,304,92,103,55,14,37.4,true
 15,Bregenz,1936,366,92,20,0,0,29.4,true
 15,Bregenz,1937,365,92,31,1,0,30.1,true
 15,Bregenz,1938,365,92,33,2,0,30.4,true
@@ -1175,7 +1175,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 15,Bregenz,2023,365,92,92,20,2,35.8,true
 15,Bregenz,2024,366,92,72,12,0,34.0,true
 15,Bregenz,2025,365,92,59,16,0,33.3,true
-15,Bregenz,2026,242,91,86,47,7,36.8,true
+15,Bregenz,2026,304,92,98,49,7,36.8,true
 16,Brenner,1948,366,92,5,0,0,26.0,true
 16,Brenner,1949,365,92,11,0,0,27.5,true
 16,Brenner,1950,365,92,12,1,0,30.1,true
@@ -1253,7 +1253,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 16,Brenner,2023,365,92,32,0,0,29.2,true
 16,Brenner,2024,366,92,26,0,0,29.2,true
 16,Brenner,2025,365,92,23,0,0,28.7,true
-16,Brenner,2026,242,91,33,3,0,31.2,true
+16,Brenner,2026,304,92,34,3,0,31.2,true
 17,Bruck an der Mur,1936,366,92,33,0,0,28.8,true
 17,Bruck an der Mur,1937,365,92,27,0,0,28.0,true
 17,Bruck an der Mur,1938,334,92,32,0,0,29.0,true
@@ -1344,7 +1344,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 17,Bruck an der Mur,2023,365,92,92,23,0,34.4,true
 17,Bruck an der Mur,2024,366,92,92,40,0,33.4,true
 17,Bruck an der Mur,2025,333,92,80,24,1,37.0,true
-17,Bruck an der Mur,2026,242,91,78,40,2,36.0,true
+17,Bruck an der Mur,2026,304,92,91,43,2,36.0,true
 18,Bruckneudorf,1947,214,92,82,32,1,35.0,true
 18,Bruckneudorf,1948,366,92,67,11,0,33.0,true
 18,Bruckneudorf,1949,365,92,56,13,0,34.0,true
@@ -1424,7 +1424,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 18,Bruckneudorf,2023,365,92,93,31,1,35.5,true
 18,Bruckneudorf,2024,366,92,103,46,1,35.1,true
 18,Bruckneudorf,2025,365,92,80,27,2,36.5,true
-18,Bruckneudorf,2026,242,91,93,48,17,38.5,true
+18,Bruckneudorf,2026,304,92,109,52,17,38.5,true
 19,Dellach,1962,245,92,50,7,0,32.3,true
 19,Dellach,1963,365,92,50,7,0,31.8,true
 19,Dellach,1964,366,92,59,5,0,31.5,true
@@ -1489,7 +1489,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 19,Dellach,2023,365,92,80,23,0,34.9,true
 19,Dellach,2024,366,92,91,41,1,35.5,true
 19,Dellach,2025,365,92,80,32,2,35.3,true
-19,Dellach,2026,242,91,96,53,3,36.9,true
+19,Dellach,2026,304,92,108,55,3,36.9,true
 116,Deutschlandsberg,1937,365,92,100,18,0,32.1,true
 116,Deutschlandsberg,1939,31,0,0,0,0,15.0,false
 116,Deutschlandsberg,1940,366,92,51,6,0,31.0,true
@@ -1578,7 +1578,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 116,Deutschlandsberg,2023,365,92,86,19,0,34.4,true
 116,Deutschlandsberg,2024,366,92,93,38,0,33.6,true
 116,Deutschlandsberg,2025,365,92,84,29,2,35.4,true
-116,Deutschlandsberg,2026,242,91,85,42,5,37.1,true
+116,Deutschlandsberg,2026,304,92,96,45,5,37.1,true
 137,Döllach,1926,153,31,14,1,0,30.2,false
 137,Döllach,1927,365,92,33,3,0,31.3,true
 137,Döllach,1928,366,92,45,8,0,32.0,true
@@ -1679,7 +1679,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 137,Döllach,2023,365,92,37,5,0,32.5,true
 137,Döllach,2024,366,92,52,4,0,31.7,true
 137,Döllach,2025,365,92,44,6,0,31.5,true
-137,Döllach,2026,242,91,55,13,0,32.1,true
+137,Döllach,2026,304,92,59,13,0,32.1,true
 22,Eisenstadt Nordost,1936,366,92,57,8,0,33.8,true
 22,Eisenstadt Nordost,1937,365,92,67,6,0,31.0,true
 22,Eisenstadt Nordost,1938,333,92,64,14,0,32.6,true
@@ -1769,7 +1769,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 22,Eisenstadt Nordost,2023,365,92,97,34,2,35.2,true
 22,Eisenstadt Nordost,2024,366,92,99,48,3,35.6,true
 22,Eisenstadt Nordost,2025,365,92,81,30,1,36.1,true
-22,Eisenstadt Nordost,2026,242,91,95,48,16,39.6,true
+22,Eisenstadt Nordost,2026,304,92,110,52,16,39.6,true
 23,Enns,1953,153,31,17,0,0,29.0,false
 23,Enns,1954,365,92,48,12,0,33.0,true
 23,Enns,1955,365,92,44,2,0,31.5,true
@@ -1829,7 +1829,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 23,Enns,2023,365,92,71,24,1,35.3,true
 23,Enns,2024,366,92,86,34,1,35.0,true
 23,Enns,2025,365,92,65,19,0,33.9,true
-23,Enns,2026,242,91,83,46,12,39.5,true
+23,Enns,2026,304,92,96,48,12,39.5,true
 91,Feistritz ob Bleiburg,1961,365,92,45,3,0,32.2,true
 91,Feistritz ob Bleiburg,1962,181,30,11,1,0,31.0,false
 91,Feistritz ob Bleiburg,1963,365,92,45,3,0,32.5,true
@@ -1895,7 +1895,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 91,Feistritz ob Bleiburg,2023,365,92,64,19,0,34.2,true
 91,Feistritz ob Bleiburg,2024,366,92,84,35,0,33.5,true
 91,Feistritz ob Bleiburg,2025,365,92,77,28,3,38.3,true
-91,Feistritz ob Bleiburg,2026,242,91,81,38,5,36.3,true
+91,Feistritz ob Bleiburg,2026,304,92,90,39,5,36.3,true
 24,Feldkirch,1936,366,92,16,0,0,29.0,true
 24,Feldkirch,1937,365,92,33,2,0,32.7,true
 24,Feldkirch,1938,362,92,32,1,0,30.8,true
@@ -1986,7 +1986,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 24,Feldkirch,2023,365,92,98,24,2,36.2,true
 24,Feldkirch,2024,366,92,79,18,0,34.1,true
 24,Feldkirch,2025,365,92,68,20,0,33.9,true
-24,Feldkirch,2026,242,91,83,50,7,36.5,true
+24,Feldkirch,2026,304,92,97,52,7,36.5,true
 120,Ferlach,1953,239,92,52,4,0,30.2,true
 120,Ferlach,1954,365,92,49,0,0,29.2,true
 120,Ferlach,1955,334,92,50,4,0,33.0,true
@@ -2057,7 +2057,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 120,Ferlach,2023,365,92,95,30,0,34.4,true
 120,Ferlach,2024,366,92,97,51,2,35.4,true
 120,Ferlach,2025,365,92,93,39,7,37.8,true
-120,Ferlach,2026,242,91,97,61,14,38.1,true
+120,Ferlach,2026,304,92,110,64,14,38.1,true
 205,Feuerkogel,1930,347,92,0,0,0,24.0,true
 205,Feuerkogel,1931,365,92,1,0,0,25.3,true
 205,Feuerkogel,1932,366,92,0,0,0,24.2,true
@@ -2154,7 +2154,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 205,Feuerkogel,2023,365,92,2,0,0,26.9,true
 205,Feuerkogel,2024,366,92,0,0,0,24.8,true
 205,Feuerkogel,2025,365,92,1,0,0,25.7,true
-205,Feuerkogel,2026,242,91,8,0,0,28.0,true
+205,Feuerkogel,2026,304,92,8,0,0,28.0,true
 186,Flattnitz,1970,122,0,0,0,0,21.2,false
 186,Flattnitz,1971,365,92,1,0,0,26.6,true
 186,Flattnitz,1972,366,92,0,0,0,24.0,true
@@ -2211,7 +2211,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 186,Flattnitz,2023,365,92,4,0,0,25.7,true
 186,Flattnitz,2024,366,92,5,0,0,26.1,true
 186,Flattnitz,2025,365,92,10,0,0,27.4,true
-186,Flattnitz,2026,242,91,13,0,0,27.8,true
+186,Flattnitz,2026,304,92,13,0,0,27.8,true
 26,Freistadt,1936,366,92,32,3,0,32.0,true
 26,Freistadt,1937,365,92,41,3,0,32.5,true
 26,Freistadt,1938,365,92,41,5,0,32.0,true
@@ -2302,7 +2302,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 26,Freistadt,2023,365,92,66,18,1,35.3,true
 26,Freistadt,2024,366,92,75,34,0,34.2,true
 26,Freistadt,2025,365,92,56,13,0,34.4,true
-26,Freistadt,2026,242,91,71,34,7,37.7,true
+26,Freistadt,2026,304,92,80,35,7,37.7,true
 187,Friesach,1958,245,92,30,1,0,30.0,true
 187,Friesach,1959,365,92,25,0,0,29.2,true
 187,Friesach,1960,366,92,20,0,0,29.6,true
@@ -2371,7 +2371,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 187,Friesach,2023,365,92,55,11,0,32.7,true
 187,Friesach,2024,366,92,77,23,0,32.1,true
 187,Friesach,2025,365,92,66,17,1,35.2,true
-187,Friesach,2026,242,91,76,27,0,34.9,true
+187,Friesach,2026,304,92,82,27,0,34.9,true
 154,Fürstenfeld,1936,366,92,61,9,0,32.0,true
 154,Fürstenfeld,1937,365,92,67,5,0,30.3,true
 154,Fürstenfeld,1938,365,92,54,12,0,33.0,true
@@ -2461,7 +2461,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 154,Fürstenfeld,2023,365,92,92,21,0,33.6,true
 154,Fürstenfeld,2024,366,92,99,44,2,35.6,true
 154,Fürstenfeld,2025,365,92,90,33,2,35.9,true
-154,Fürstenfeld,2026,242,91,90,53,14,38.6,true
+154,Fürstenfeld,2026,304,92,103,57,14,38.6,true
 27,Gallspach,1966,61,0,0,0,0,13.5,false
 27,Gallspach,1967,365,92,52,13,0,33.4,true
 27,Gallspach,1968,366,92,38,7,0,33.0,true
@@ -2519,7 +2519,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 27,Gallspach,2023,365,92,66,19,1,35.1,true
 27,Gallspach,2024,366,92,77,29,0,33.7,true
 27,Gallspach,2025,365,92,61,16,0,33.4,true
-27,Gallspach,2026,241,90,76,33,6,37.7,false
+27,Gallspach,2026,303,91,85,35,6,37.7,false
 28,Galtür,1956,306,92,1,0,0,27.0,true
 28,Galtür,1957,365,92,7,2,0,30.6,true
 28,Galtür,1958,365,92,5,0,0,28.0,true
@@ -2590,7 +2590,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 28,Galtür,2023,365,92,18,0,0,29.0,true
 28,Galtür,2024,366,92,12,0,0,27.4,true
 28,Galtür,2025,365,92,16,0,0,27.7,true
-28,Galtür,2026,242,91,29,0,0,29.8,true
+28,Galtür,2026,304,92,31,0,0,29.8,true
 200,Gleisdorf,1961,365,92,45,5,0,33.6,true
 200,Gleisdorf,1962,365,92,42,4,0,31.2,true
 200,Gleisdorf,1963,365,92,51,6,0,32.1,true
@@ -2656,7 +2656,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 200,Gleisdorf,2023,365,92,81,18,0,33.1,true
 200,Gleisdorf,2024,366,92,94,35,0,33.1,true
 200,Gleisdorf,2025,365,92,78,20,1,35.0,true
-200,Gleisdorf,2026,242,91,84,38,4,36.6,true
+200,Gleisdorf,2026,304,92,95,41,4,36.6,true
 30,Graz Universität/Heinrichstraße,1894,365,92,25,1,0,31.5,true
 30,Graz Universität/Heinrichstraße,1895,365,92,29,1,0,30.6,true
 30,Graz Universität/Heinrichstraße,1896,366,92,14,0,0,29.0,true
@@ -2789,7 +2789,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 30,Graz Universität/Heinrichstraße,2023,365,92,85,20,0,33.7,true
 30,Graz Universität/Heinrichstraße,2024,366,92,96,39,0,33.5,true
 30,Graz Universität/Heinrichstraße,2025,365,92,85,32,1,35.0,true
-30,Graz Universität/Heinrichstraße,2026,242,91,92,48,6,37.8,true
+30,Graz Universität/Heinrichstraße,2026,304,92,105,51,6,37.8,true
 31,Groß-Enzersdorf,1936,366,92,52,5,0,32.0,true
 31,Groß-Enzersdorf,1937,365,92,62,7,0,30.8,true
 31,Groß-Enzersdorf,1938,365,92,52,15,0,33.0,true
@@ -2880,7 +2880,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 31,Groß-Enzersdorf,2023,365,92,91,33,1,35.8,true
 31,Groß-Enzersdorf,2024,366,92,104,45,0,34.7,true
 31,Groß-Enzersdorf,2025,365,92,84,29,2,36.4,true
-31,Groß-Enzersdorf,2026,242,91,95,47,15,39.1,true
+31,Groß-Enzersdorf,2026,304,92,110,50,15,39.1,true
 32,Gumpoldskirchen,1948,245,92,60,8,0,34.0,true
 32,Gumpoldskirchen,1949,348,92,45,10,0,33.5,true
 32,Gumpoldskirchen,1950,365,92,80,21,3,37.1,true
@@ -2951,7 +2951,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 32,Gumpoldskirchen,2023,365,92,93,33,3,36.0,true
 32,Gumpoldskirchen,2024,366,92,101,47,2,35.2,true
 32,Gumpoldskirchen,2025,365,92,80,26,2,36.4,true
-32,Gumpoldskirchen,2026,242,91,94,47,11,39.5,true
+32,Gumpoldskirchen,2026,304,92,111,50,11,39.5,true
 183,Güssing,1948,366,92,72,5,0,31.6,true
 183,Güssing,1949,365,92,60,8,0,32.6,true
 183,Güssing,1950,365,92,93,30,7,37.0,true
@@ -3005,7 +3005,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 183,Güssing,2023,365,92,100,27,0,34.5,true
 183,Güssing,2024,366,92,106,56,3,36.2,true
 183,Güssing,2025,365,92,94,41,8,37.2,true
-183,Güssing,2026,242,91,97,55,16,38.6,true
+183,Güssing,2026,304,92,115,61,16,38.6,true
 176,Hahnenkamm-Ehrenbachhöhe,1938,206,87,0,0,0,22.6,false
 176,Hahnenkamm-Ehrenbachhöhe,1939,332,61,0,0,0,23.0,false
 176,Hahnenkamm-Ehrenbachhöhe,1940,366,92,0,0,0,22.0,true
@@ -3078,7 +3078,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 176,Hahnenkamm-Ehrenbachhöhe,2023,365,92,2,0,0,26.6,true
 176,Hahnenkamm-Ehrenbachhöhe,2024,366,92,0,0,0,24.2,true
 176,Hahnenkamm-Ehrenbachhöhe,2025,365,92,0,0,0,24.2,true
-176,Hahnenkamm-Ehrenbachhöhe,2026,242,91,4,0,0,26.5,true
+176,Hahnenkamm-Ehrenbachhöhe,2026,304,92,4,0,0,26.5,true
 126,Haiming,1947,61,0,0,0,0,20.9,false
 126,Haiming,1948,366,92,43,3,0,30.6,true
 126,Haiming,1949,365,92,56,14,0,34.8,true
@@ -3151,7 +3151,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 126,Haiming,2023,365,92,82,26,1,35.1,true
 126,Haiming,2024,366,92,76,24,0,33.7,true
 126,Haiming,2025,365,92,64,28,1,35.3,true
-126,Haiming,2026,242,91,85,42,8,38.2,true
+126,Haiming,2026,304,92,103,45,8,38.2,true
 166,Hall bei Admont,1936,366,92,32,3,0,31.2,true
 166,Hall bei Admont,1937,365,92,33,0,0,29.1,true
 166,Hall bei Admont,1938,352,80,33,2,0,30.7,false
@@ -3238,7 +3238,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 166,Hall bei Admont,2023,365,92,70,19,0,33.6,true
 166,Hall bei Admont,2024,366,92,74,28,0,33.6,true
 166,Hall bei Admont,2025,365,92,62,20,0,34.3,true
-166,Hall bei Admont,2026,242,91,69,29,5,36.7,true
+166,Hall bei Admont,2026,304,92,78,31,5,36.7,true
 158,Hohenau,1948,366,92,59,10,0,32.0,true
 158,Hohenau,1949,365,92,53,10,0,33.0,true
 158,Hohenau,1950,365,92,72,21,3,36.2,true
@@ -3317,7 +3317,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 158,Hohenau,2023,365,92,87,28,0,34.9,true
 158,Hohenau,2024,366,92,99,48,3,36.0,true
 158,Hohenau,2025,365,92,83,28,3,36.8,true
-158,Hohenau,2026,242,91,90,46,15,39.6,true
+158,Hohenau,2026,303,92,104,49,15,39.6,true
 146,Holzgau,1936,366,92,8,0,0,28.8,true
 146,Holzgau,1937,365,92,7,0,0,29.8,true
 146,Holzgau,1938,365,92,22,0,0,28.8,true
@@ -3407,7 +3407,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 146,Holzgau,2023,365,92,47,6,0,32.3,true
 146,Holzgau,2024,366,92,36,2,0,30.9,true
 146,Holzgau,2025,365,92,35,0,0,29.8,true
-146,Holzgau,2026,242,91,51,11,0,32.3,true
+146,Holzgau,2026,304,92,57,11,0,32.3,true
 199,Horn Wasserwerk,1943,275,92,53,11,4,36.0,true
 199,Horn Wasserwerk,1944,244,61,19,2,0,31.6,false
 199,Horn Wasserwerk,1945,297,92,63,16,1,36.1,true
@@ -3473,7 +3473,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 199,Horn Wasserwerk,2023,365,92,83,28,2,35.1,true
 199,Horn Wasserwerk,2024,366,92,91,40,1,35.0,true
 199,Horn Wasserwerk,2025,365,92,76,19,0,34.9,true
-199,Horn Wasserwerk,2026,242,91,88,41,12,39.0,true
+199,Horn Wasserwerk,2026,304,92,101,44,12,39.0,true
 38,Imst,1936,335,92,48,7,0,33.0,true
 38,Imst,1937,365,92,58,8,0,34.0,true
 38,Imst,1938,334,92,44,12,0,33.2,true
@@ -3551,7 +3551,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 38,Imst,2023,365,92,87,31,2,35.2,true
 38,Imst,2024,366,92,77,30,0,34.2,true
 38,Imst,2025,365,92,69,28,0,34.9,true
-38,Imst,2026,242,91,82,41,4,36.6,true
+38,Imst,2026,304,92,100,43,4,36.6,true
 175,Innsbruck Flughafen,1951,214,92,57,14,0,33.4,true
 175,Innsbruck Flughafen,1952,366,92,64,19,3,35.8,true
 175,Innsbruck Flughafen,1953,365,92,55,13,0,32.1,true
@@ -3627,7 +3627,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 175,Innsbruck Flughafen,2023,365,92,90,30,1,36.7,true
 175,Innsbruck Flughafen,2024,366,92,85,28,0,33.4,true
 175,Innsbruck Flughafen,2025,365,92,69,26,0,33.8,true
-175,Innsbruck Flughafen,2026,242,91,80,40,6,37.3,true
+175,Innsbruck Flughafen,2026,304,92,96,42,6,37.3,true
 39,Innsbruck Universität,1877,365,92,48,6,0,32.0,true
 39,Innsbruck Universität,1878,365,92,7,0,0,29.8,true
 39,Innsbruck Universität,1879,334,92,36,1,0,30.0,true
@@ -3771,7 +3771,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 39,Innsbruck Universität,2023,365,92,97,40,2,37.3,true
 39,Innsbruck Universität,2024,366,92,95,35,0,34.9,true
 39,Innsbruck Universität,2025,365,92,75,33,3,35.6,true
-39,Innsbruck Universität,2026,242,91,88,47,13,38.7,true
+39,Innsbruck Universität,2026,303,92,107,49,13,38.7,true
 40,Irdning-Gumpenstein,1953,31,0,0,0,0,10.0,false
 40,Irdning-Gumpenstein,1954,364,92,34,1,0,30.0,true
 40,Irdning-Gumpenstein,1955,365,92,32,1,0,31.0,true
@@ -3845,7 +3845,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 40,Irdning-Gumpenstein,2023,365,92,58,17,0,33.4,true
 40,Irdning-Gumpenstein,2024,366,92,71,21,0,32.9,true
 40,Irdning-Gumpenstein,2025,365,92,57,19,0,33.1,true
-40,Irdning-Gumpenstein,2026,242,91,66,25,2,35.3,true
+40,Irdning-Gumpenstein,2026,304,92,74,27,2,35.3,true
 193,Jauerling,1935,365,92,5,0,0,29.1,true
 193,Jauerling,1938,365,92,7,0,0,26.8,true
 193,Jauerling,1939,365,92,3,0,0,25.7,true
@@ -3924,7 +3924,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 193,Jauerling,2023,365,92,24,1,0,31.0,true
 193,Jauerling,2024,366,92,35,1,0,30.1,true
 193,Jauerling,2025,365,92,21,1,0,30.1,true
-193,Jauerling,2026,242,91,37,10,0,34.8,true
+193,Jauerling,2026,304,92,39,10,0,34.8,true
 42,Jenbach,1955,275,92,38,1,0,31.3,true
 42,Jenbach,1956,366,92,41,3,0,31.8,true
 42,Jenbach,1957,365,92,39,10,1,37.3,true
@@ -3994,7 +3994,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 42,Jenbach,2021,294,92,59,10,0,33.8,true
 42,Jenbach,2024,258,92,67,21,0,33.8,true
 42,Jenbach,2025,365,92,64,20,0,34.0,true
-42,Jenbach,2026,242,91,76,38,5,37.2,true
+42,Jenbach,2026,303,92,91,40,5,37.2,true
 43,Kals,1951,245,92,7,0,0,26.6,true
 43,Kals,1952,366,92,15,0,0,29.1,true
 43,Kals,1953,365,92,2,0,0,25.6,true
@@ -4070,7 +4070,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 43,Kals,2023,365,92,27,2,0,30.5,true
 43,Kals,2024,366,92,31,0,0,29.6,true
 43,Kals,2025,365,92,24,0,0,29.9,true
-43,Kals,2026,242,91,39,2,0,30.7,true
+43,Kals,2026,304,92,41,2,0,30.7,true
 44,Kalwang,1966,31,0,0,0,0,7.6,false
 44,Kalwang,1967,365,92,33,4,0,31.3,true
 44,Kalwang,1968,366,92,25,3,0,31.8,true
@@ -4127,7 +4127,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 44,Kalwang,2023,365,92,49,9,0,32.8,true
 44,Kalwang,2024,366,92,65,12,0,32.3,true
 44,Kalwang,2025,365,92,51,15,0,31.8,true
-44,Kalwang,2026,242,91,61,19,1,35.7,true
+44,Kalwang,2026,304,92,67,19,1,35.7,true
 122,Kanzelhöhe,1938,363,92,0,0,0,24.8,true
 122,Kanzelhöhe,1939,365,92,1,0,0,26.0,true
 122,Kanzelhöhe,1940,366,92,0,0,0,23.0,true
@@ -4212,7 +4212,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 122,Kanzelhöhe,2023,365,92,10,0,0,26.3,true
 122,Kanzelhöhe,2024,366,92,11,0,0,25.8,true
 122,Kanzelhöhe,2025,365,92,13,0,0,28.5,true
-122,Kanzelhöhe,2026,242,91,20,0,0,29.5,true
+122,Kanzelhöhe,2026,304,92,20,0,0,29.5,true
 118,Kitzbühel,1936,274,92,28,3,0,30.0,true
 118,Kitzbühel,1938,179,57,14,0,0,29.1,false
 118,Kitzbühel,1939,365,92,20,0,0,29.5,true
@@ -4291,8 +4291,103 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 118,Kitzbühel,2023,365,92,59,19,0,34.4,true
 118,Kitzbühel,2024,366,92,63,18,0,34.5,true
 118,Kitzbühel,2025,365,92,56,18,0,33.6,true
-118,Kitzbühel,2026,235,84,67,30,2,35.7,false
-48,Klagenfurt Flughafen,1952,184,62,43,18,0,34.6,false
+118,Kitzbühel,2026,304,92,79,32,2,35.7,true
+48,Klagenfurt Flughafen,1847,61,0,0,0,0,10.4,false
+48,Klagenfurt Flughafen,1848,366,92,88,24,2,36.9,true
+48,Klagenfurt Flughafen,1849,365,92,74,25,0,33.8,true
+48,Klagenfurt Flughafen,1850,365,92,83,19,0,33.8,true
+48,Klagenfurt Flughafen,1851,363,92,75,21,0,33.5,true
+48,Klagenfurt Flughafen,1852,340,88,86,33,4,37.1,false
+48,Klagenfurt Flughafen,1853,123,92,68,25,3,37.1,true
+48,Klagenfurt Flughafen,1854,328,88,68,14,0,32.1,false
+48,Klagenfurt Flughafen,1855,274,71,63,41,5,38.8,false
+48,Klagenfurt Flughafen,1856,239,62,41,14,0,34.4,false
+48,Klagenfurt Flughafen,1857,232,34,29,6,0,31.5,false
+48,Klagenfurt Flughafen,1858,339,92,47,4,0,31.3,true
+48,Klagenfurt Flughafen,1859,318,63,47,20,1,35.3,false
+48,Klagenfurt Flughafen,1860,366,92,45,3,0,32.3,true
+48,Klagenfurt Flughafen,1861,324,92,72,32,3,36.5,true
+48,Klagenfurt Flughafen,1862,365,92,56,9,0,32.3,true
+48,Klagenfurt Flughafen,1863,335,62,36,6,0,32.0,false
+48,Klagenfurt Flughafen,1864,366,92,39,1,0,30.3,true
+48,Klagenfurt Flughafen,1865,365,92,75,17,0,34.0,true
+48,Klagenfurt Flughafen,1866,365,92,37,4,0,32.9,true
+48,Klagenfurt Flughafen,1867,365,92,74,2,0,30.3,true
+48,Klagenfurt Flughafen,1868,366,92,75,18,1,37.0,true
+48,Klagenfurt Flughafen,1869,365,92,48,10,0,33.4,true
+48,Klagenfurt Flughafen,1870,365,92,48,9,0,33.8,true
+48,Klagenfurt Flughafen,1871,365,92,45,5,0,31.0,true
+48,Klagenfurt Flughafen,1872,335,61,23,0,0,29.0,false
+48,Klagenfurt Flughafen,1873,365,92,54,9,0,31.8,true
+48,Klagenfurt Flughafen,1874,357,92,49,4,0,31.0,true
+48,Klagenfurt Flughafen,1875,90,0,0,0,0,4.1,false
+48,Klagenfurt Flughafen,1880,275,92,35,3,0,31.0,true
+48,Klagenfurt Flughafen,1881,337,92,42,9,0,33.5,true
+48,Klagenfurt Flughafen,1882,365,92,30,0,0,29.0,true
+48,Klagenfurt Flughafen,1883,365,92,39,6,0,32.1,true
+48,Klagenfurt Flughafen,1884,336,92,30,5,0,33.6,true
+48,Klagenfurt Flughafen,1885,212,61,38,1,0,31.2,false
+48,Klagenfurt Flughafen,1887,40,0,0,0,0,8.8,false
+48,Klagenfurt Flughafen,1888,366,92,55,13,0,34.0,true
+48,Klagenfurt Flughafen,1889,365,92,66,12,0,34.0,true
+48,Klagenfurt Flughafen,1890,365,92,58,16,1,36.0,true
+48,Klagenfurt Flughafen,1891,365,92,44,11,0,34.0,true
+48,Klagenfurt Flughafen,1892,366,92,51,8,0,32.6,true
+48,Klagenfurt Flughafen,1893,365,92,52,9,1,35.0,true
+48,Klagenfurt Flughafen,1894,365,92,47,4,0,33.0,true
+48,Klagenfurt Flughafen,1895,365,92,65,13,0,33.0,true
+48,Klagenfurt Flughafen,1896,366,92,41,2,0,32.0,true
+48,Klagenfurt Flughafen,1897,365,92,59,12,0,34.0,true
+48,Klagenfurt Flughafen,1898,365,92,87,19,0,33.0,true
+48,Klagenfurt Flughafen,1899,365,92,40,1,0,31.0,true
+48,Klagenfurt Flughafen,1900,365,92,43,12,0,31.0,true
+48,Klagenfurt Flughafen,1901,365,92,46,1,0,30.0,true
+48,Klagenfurt Flughafen,1902,365,92,30,3,0,30.8,true
+48,Klagenfurt Flughafen,1903,365,92,40,2,0,31.0,true
+48,Klagenfurt Flughafen,1904,366,92,64,6,0,31.0,true
+48,Klagenfurt Flughafen,1905,365,92,50,11,1,35.6,true
+48,Klagenfurt Flughafen,1906,365,92,53,3,0,30.0,true
+48,Klagenfurt Flughafen,1907,365,92,34,0,0,29.2,true
+48,Klagenfurt Flughafen,1908,366,92,53,1,0,30.0,true
+48,Klagenfurt Flughafen,1909,365,92,29,1,0,30.4,true
+48,Klagenfurt Flughafen,1910,365,92,18,0,0,28.5,true
+48,Klagenfurt Flughafen,1911,365,92,69,10,0,32.5,true
+48,Klagenfurt Flughafen,1912,366,92,43,2,0,31.4,true
+48,Klagenfurt Flughafen,1913,365,92,29,0,0,29.8,true
+48,Klagenfurt Flughafen,1914,365,92,32,0,0,29.8,true
+48,Klagenfurt Flughafen,1915,365,92,45,5,0,32.0,true
+48,Klagenfurt Flughafen,1916,366,92,41,7,0,32.4,true
+48,Klagenfurt Flughafen,1917,365,92,76,18,0,33.5,true
+48,Klagenfurt Flughafen,1918,365,92,30,3,0,34.2,true
+48,Klagenfurt Flughafen,1919,365,92,44,6,0,32.2,true
+48,Klagenfurt Flughafen,1920,366,92,35,3,0,34.2,true
+48,Klagenfurt Flughafen,1921,330,92,71,15,0,32.5,true
+48,Klagenfurt Flughafen,1922,365,92,62,7,0,31.0,true
+48,Klagenfurt Flughafen,1923,365,92,47,6,0,33.0,true
+48,Klagenfurt Flughafen,1924,366,92,37,5,0,33.2,true
+48,Klagenfurt Flughafen,1925,365,92,28,2,0,30.0,true
+48,Klagenfurt Flughafen,1926,365,92,23,0,0,28.0,true
+48,Klagenfurt Flughafen,1927,365,92,50,4,0,31.4,true
+48,Klagenfurt Flughafen,1928,366,92,57,9,0,31.4,true
+48,Klagenfurt Flughafen,1929,365,92,58,5,0,31.4,true
+48,Klagenfurt Flughafen,1930,365,92,41,3,0,32.4,true
+48,Klagenfurt Flughafen,1931,365,92,50,2,0,30.4,true
+48,Klagenfurt Flughafen,1932,366,92,52,4,0,31.4,true
+48,Klagenfurt Flughafen,1933,365,92,30,8,0,31.6,true
+48,Klagenfurt Flughafen,1934,365,92,30,0,0,28.9,true
+48,Klagenfurt Flughafen,1935,365,92,41,3,0,33.4,true
+48,Klagenfurt Flughafen,1936,366,92,20,1,0,30.3,true
+48,Klagenfurt Flughafen,1937,365,92,33,0,0,29.0,true
+48,Klagenfurt Flughafen,1938,365,92,33,0,0,29.1,true
+48,Klagenfurt Flughafen,1939,365,92,33,2,0,30.3,true
+48,Klagenfurt Flughafen,1940,366,92,15,0,0,27.0,true
+48,Klagenfurt Flughafen,1946,245,92,53,2,0,31.0,true
+48,Klagenfurt Flughafen,1947,337,92,67,14,0,33.5,true
+48,Klagenfurt Flughafen,1948,366,92,37,1,0,30.5,true
+48,Klagenfurt Flughafen,1949,365,92,45,4,0,31.0,true
+48,Klagenfurt Flughafen,1950,365,92,79,16,1,35.6,true
+48,Klagenfurt Flughafen,1951,365,92,66,1,0,30.3,true
+48,Klagenfurt Flughafen,1952,366,92,61,19,0,34.6,true
 48,Klagenfurt Flughafen,1953,365,92,47,2,0,30.4,true
 48,Klagenfurt Flughafen,1954,365,92,40,0,0,29.5,true
 48,Klagenfurt Flughafen,1955,365,92,36,3,0,31.4,true
@@ -4366,7 +4461,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 48,Klagenfurt Flughafen,2023,365,92,74,21,0,34.0,true
 48,Klagenfurt Flughafen,2024,366,92,85,38,0,33.7,true
 48,Klagenfurt Flughafen,2025,365,92,83,33,3,37.9,true
-48,Klagenfurt Flughafen,2026,242,91,88,49,8,37.3,true
+48,Klagenfurt Flughafen,2026,304,92,99,52,8,37.3,true
 157,Kollerschlag,1947,184,62,33,5,0,31.0,false
 157,Kollerschlag,1948,366,92,18,1,0,30.0,true
 157,Kollerschlag,1949,365,92,24,2,0,31.0,true
@@ -4446,7 +4541,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 157,Kollerschlag,2023,365,92,43,8,0,32.8,true
 157,Kollerschlag,2024,366,92,54,6,0,31.8,true
 157,Kollerschlag,2025,365,92,34,6,0,31.8,true
-157,Kollerschlag,2026,242,91,49,15,0,34.5,true
+157,Kollerschlag,2026,304,92,51,15,0,34.5,true
 46,Krems,1936,366,92,34,0,0,29.2,true
 46,Krems,1937,365,92,30,0,0,29.2,true
 46,Krems,1938,334,92,39,3,0,31.2,true
@@ -4535,7 +4630,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 46,Krems,2023,365,92,94,36,4,35.7,true
 46,Krems,2024,366,92,99,41,0,34.3,true
 46,Krems,2025,365,92,83,28,2,36.4,true
-46,Krems,2026,242,91,96,51,15,40.2,true
+46,Krems,2026,304,92,111,54,15,40.2,true
 204,Kremsmünster,1876,366,92,19,0,0,28.2,true
 204,Kremsmünster,1877,365,92,29,0,0,29.7,true
 204,Kremsmünster,1878,365,92,7,0,0,28.0,true
@@ -4686,7 +4781,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 204,Kremsmünster,2023,365,92,72,26,0,34.5,true
 204,Kremsmünster,2024,366,92,85,32,0,33.6,true
 204,Kremsmünster,2025,365,92,69,17,0,33.0,true
-204,Kremsmünster,2026,242,91,78,38,8,38.7,true
+204,Kremsmünster,2026,304,92,91,40,8,38.7,true
 47,Krimml,1953,200,78,19,0,0,29.5,false
 47,Krimml,1954,365,92,11,0,0,27.6,true
 47,Krimml,1955,365,92,3,0,0,27.5,true
@@ -4757,7 +4852,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 47,Krimml,2023,365,92,45,9,0,32.0,true
 47,Krimml,2024,366,92,48,8,0,31.4,true
 47,Krimml,2025,365,92,43,6,0,31.8,true
-47,Krimml,2026,242,91,53,15,0,33.9,true
+47,Krimml,2026,304,92,58,15,0,33.9,true
 142,Kufstein,1937,38,0,0,0,0,6.6,false
 142,Kufstein,1938,327,92,48,6,0,32.0,true
 142,Kufstein,1939,365,92,47,3,0,30.5,true
@@ -4846,7 +4941,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 142,Kufstein,2023,365,92,66,21,1,36.5,true
 142,Kufstein,2024,366,92,74,11,0,34.0,true
 142,Kufstein,2025,365,92,62,17,0,33.6,true
-142,Kufstein,2026,242,91,76,35,5,37.0,true
+142,Kufstein,2026,304,92,90,38,5,37.0,true
 152,Laa an der Thaya Kläranlage,1952,366,92,73,24,3,37.0,true
 152,Laa an der Thaya Kläranlage,1953,365,92,69,10,0,32.2,true
 152,Laa an der Thaya Kläranlage,1954,365,92,54,9,0,31.5,true
@@ -4921,7 +5016,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 152,Laa an der Thaya Kläranlage,2023,365,92,90,33,3,35.9,true
 152,Laa an der Thaya Kläranlage,2024,366,92,100,46,4,35.4,true
 152,Laa an der Thaya Kläranlage,2025,365,92,80,29,3,36.1,true
-152,Laa an der Thaya Kläranlage,2026,242,91,93,45,14,40.0,true
+152,Laa an der Thaya Kläranlage,2026,304,92,105,48,14,40.0,true
 50,Landeck,1946,334,92,32,6,0,33.0,true
 50,Landeck,1947,365,92,65,17,0,34.3,true
 50,Landeck,1948,366,92,35,2,0,30.5,true
@@ -5002,7 +5097,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 50,Landeck,2023,365,92,76,26,1,35.7,true
 50,Landeck,2024,366,92,73,21,0,34.3,true
 50,Landeck,2025,365,92,63,25,0,34.3,true
-50,Landeck,2026,242,91,80,36,6,37.7,true
+50,Landeck,2026,304,92,97,37,6,37.7,true
 51,Langenlebarn,1963,365,92,61,15,0,34.6,true
 51,Langenlebarn,1964,366,92,59,13,0,33.6,true
 51,Langenlebarn,1965,365,92,34,9,0,33.0,true
@@ -5066,7 +5161,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 51,Langenlebarn,2023,365,92,101,41,7,36.6,true
 51,Langenlebarn,2024,366,92,104,49,8,36.3,true
 51,Langenlebarn,2025,365,92,82,27,3,36.9,true
-51,Langenlebarn,2026,242,91,92,54,19,40.7,true
+51,Langenlebarn,2026,304,92,109,58,19,40.7,true
 52,Langenlois,1965,365,92,38,9,0,33.0,true
 52,Langenlois,1966,334,61,31,3,0,32.0,false
 52,Langenlois,1967,365,92,58,15,0,33.0,true
@@ -5128,7 +5223,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 52,Langenlois,2023,365,92,97,32,4,35.4,true
 52,Langenlois,2024,366,92,103,45,0,34.6,true
 52,Langenlois,2025,365,92,82,26,1,36.0,true
-52,Langenlois,2026,242,91,97,48,15,40.2,true
+52,Langenlois,2026,304,92,112,51,15,40.2,true
 67,Leiser Berge,1948,366,92,39,2,0,31.0,true
 67,Leiser Berge,1949,365,92,42,6,0,32.2,true
 67,Leiser Berge,1950,365,92,58,10,3,35.4,true
@@ -5207,7 +5302,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 67,Leiser Berge,2023,365,92,68,16,0,34.7,true
 67,Leiser Berge,2024,366,92,74,23,0,32.7,true
 67,Leiser Berge,2025,365,92,52,13,1,35.3,true
-67,Leiser Berge,2026,242,91,72,29,8,37.0,true
+67,Leiser Berge,2026,304,92,83,31,8,37.0,true
 55,Lienz,1934,365,92,43,2,0,31.1,true
 55,Lienz,1935,365,92,51,6,0,33.8,true
 55,Lienz,1938,365,92,39,0,0,29.4,true
@@ -5295,7 +5390,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 55,Lienz,2023,365,92,77,23,0,33.9,true
 55,Lienz,2024,366,92,80,34,0,34.5,true
 55,Lienz,2025,365,92,75,26,0,34.1,true
-55,Lienz,2026,242,91,91,50,2,36.1,true
+55,Lienz,2026,304,92,104,52,2,36.1,true
 56,Linz Stadt,1931,365,92,47,2,0,30.0,true
 56,Linz Stadt,1932,366,92,45,2,0,30.4,true
 56,Linz Stadt,1933,365,92,20,1,0,30.0,true
@@ -5387,7 +5482,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 56,Linz Stadt,2023,365,92,79,32,1,35.4,true
 56,Linz Stadt,2024,366,92,93,38,0,34.6,true
 56,Linz Stadt,2025,365,92,70,19,0,34.3,true
-56,Linz Stadt,2026,242,91,84,44,10,38.5,true
+56,Linz Stadt,2026,304,92,98,46,10,38.5,true
 57,Litschau,1954,184,62,15,0,0,28.1,false
 57,Litschau,1955,365,92,11,0,0,28.8,true
 57,Litschau,1956,366,92,20,0,0,29.0,true
@@ -5460,7 +5555,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 57,Litschau,2023,365,92,62,14,0,34.1,true
 57,Litschau,2024,366,92,66,19,0,33.0,true
 57,Litschau,2025,365,92,50,15,0,32.8,true
-57,Litschau,2026,242,91,67,25,7,38.1,true
+57,Litschau,2026,304,92,73,26,7,38.1,true
 206,Loibl Tunnel,1959,365,92,2,0,0,25.5,true
 206,Loibl Tunnel,1960,366,92,1,0,0,25.4,true
 206,Loibl Tunnel,1961,365,92,7,0,0,27.4,true
@@ -5528,7 +5623,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 206,Loibl Tunnel,2023,365,92,17,0,0,27.7,true
 206,Loibl Tunnel,2024,366,92,25,0,0,27.7,true
 206,Loibl Tunnel,2025,365,92,20,0,0,28.7,true
-206,Loibl Tunnel,2026,242,91,36,1,0,30.2,true
+206,Loibl Tunnel,2026,304,92,36,1,0,30.2,true
 59,Mariazell/St.Sebastian Flugfeld,1948,349,92,26,3,0,30.0,true
 59,Mariazell/St.Sebastian Flugfeld,1949,181,30,5,1,0,30.0,false
 59,Mariazell/St.Sebastian Flugfeld,1950,334,92,47,9,0,34.0,true
@@ -5607,7 +5702,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 59,Mariazell/St.Sebastian Flugfeld,2023,365,92,41,7,0,31.5,true
 59,Mariazell/St.Sebastian Flugfeld,2024,366,92,48,2,0,30.6,true
 59,Mariazell/St.Sebastian Flugfeld,2025,365,92,35,3,0,30.8,true
-59,Mariazell/St.Sebastian Flugfeld,2026,242,91,50,14,0,33.8,true
+59,Mariazell/St.Sebastian Flugfeld,2026,304,92,55,14,0,33.8,true
 60,Mattsee,1949,197,75,27,4,0,31.8,false
 60,Mattsee,1950,365,92,50,11,0,34.1,true
 60,Mattsee,1951,365,92,36,0,0,29.9,true
@@ -5685,7 +5780,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 60,Mattsee,2023,365,92,64,19,0,34.8,true
 60,Mattsee,2024,366,92,69,11,0,32.0,true
 60,Mattsee,2025,365,92,55,15,0,32.7,true
-60,Mattsee,2026,242,91,73,26,5,36.0,true
+60,Mattsee,2026,304,92,82,28,5,36.0,true
 61,Mayrhofen,1936,366,92,48,9,0,32.5,true
 61,Mayrhofen,1937,365,92,57,10,0,33.1,true
 61,Mayrhofen,1938,365,92,52,10,0,32.8,true
@@ -5776,7 +5871,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 61,Mayrhofen,2023,365,92,76,26,1,35.2,true
 61,Mayrhofen,2024,366,92,79,26,0,34.3,true
 61,Mayrhofen,2025,365,92,66,26,1,35.3,true
-61,Mayrhofen,2026,240,89,79,38,6,37.5,false
+61,Mayrhofen,2026,302,90,92,40,6,37.5,false
 163,Mondsee,1936,366,92,26,0,0,29.0,true
 163,Mondsee,1937,365,92,43,1,0,31.8,true
 163,Mondsee,1938,365,92,36,2,0,30.0,true
@@ -5867,7 +5962,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 163,Mondsee,2023,365,92,67,20,1,35.1,true
 163,Mondsee,2024,366,92,73,23,0,33.2,true
 163,Mondsee,2025,365,92,61,15,0,33.5,true
-163,Mondsee,2026,242,91,77,34,6,37.2,true
+163,Mondsee,2026,304,92,88,36,6,37.2,true
 63,Mönichkirchen,1954,153,31,0,0,0,24.3,false
 63,Mönichkirchen,1955,365,92,0,0,0,24.5,true
 63,Mönichkirchen,1956,366,92,0,0,0,24.5,true
@@ -5940,7 +6035,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 63,Mönichkirchen,2023,365,92,17,0,0,28.7,true
 63,Mönichkirchen,2024,366,92,31,0,0,28.0,true
 63,Mönichkirchen,2025,365,92,19,0,0,28.9,true
-63,Mönichkirchen,2026,242,91,36,5,0,31.6,true
+63,Mönichkirchen,2026,304,92,40,5,0,31.6,true
 167,Mürzzuschlag,1948,366,92,27,1,0,30.0,true
 167,Mürzzuschlag,1949,365,92,27,1,0,30.0,true
 167,Mürzzuschlag,1950,365,92,51,9,0,34.0,true
@@ -6019,7 +6114,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 167,Mürzzuschlag,2023,365,92,53,10,0,32.7,true
 167,Mürzzuschlag,2024,366,92,70,14,0,32.6,true
 167,Mürzzuschlag,2025,365,92,61,13,0,33.6,true
-167,Mürzzuschlag,2026,242,91,60,23,0,34.9,true
+167,Mürzzuschlag,2026,304,92,68,24,0,34.9,true
 121,Nauders,1958,214,92,10,0,0,27.5,true
 121,Nauders,1959,365,92,9,0,0,28.0,true
 121,Nauders,1960,366,92,7,0,0,26.8,true
@@ -6088,7 +6183,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 121,Nauders,2023,365,92,34,3,0,30.6,true
 121,Nauders,2024,366,92,32,1,0,30.2,true
 121,Nauders,2025,365,92,34,1,0,30.1,true
-121,Nauders,2026,242,91,48,9,0,32.8,true
+121,Nauders,2026,304,92,52,9,0,32.8,true
 64,Neumarkt,1936,366,92,30,0,0,29.0,true
 64,Neumarkt,1937,365,92,28,0,0,29.1,true
 64,Neumarkt,1938,365,92,29,0,0,29.0,true
@@ -6173,7 +6268,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 64,Neumarkt,2023,365,92,39,3,0,30.7,true
 64,Neumarkt,2024,366,92,59,4,0,30.7,true
 64,Neumarkt,2025,365,92,51,8,0,32.9,true
-64,Neumarkt,2026,242,91,62,21,0,33.8,true
+64,Neumarkt,2026,304,92,66,21,0,33.8,true
 65,Neusiedl am See,1936,366,92,60,14,0,34.0,true
 65,Neusiedl am See,1937,365,92,64,10,0,32.0,true
 65,Neusiedl am See,1938,365,92,63,19,1,35.0,true
@@ -6261,7 +6356,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 65,Neusiedl am See,2023,365,92,96,37,0,34.8,true
 65,Neusiedl am See,2024,366,92,101,50,2,35.2,true
 65,Neusiedl am See,2025,365,92,86,33,1,35.7,true
-65,Neusiedl am See,2026,242,91,95,49,16,38.2,true
+65,Neusiedl am See,2026,304,92,110,53,16,38.2,true
 66,Obergurgl,1953,245,92,0,0,0,23.1,true
 66,Obergurgl,1954,365,92,0,0,0,22.0,true
 66,Obergurgl,1955,365,92,0,0,0,22.5,true
@@ -6335,7 +6430,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 66,Obergurgl,2023,365,92,4,0,0,26.2,true
 66,Obergurgl,2024,366,92,2,0,0,25.7,true
 66,Obergurgl,2025,365,92,8,0,0,26.1,true
-66,Obergurgl,2026,242,91,5,0,0,27.2,true
+66,Obergurgl,2026,304,92,5,0,0,27.2,true
 69,Obervellach,1970,122,0,1,0,0,25.5,false
 69,Obervellach,1971,365,92,40,4,0,32.2,true
 69,Obervellach,1972,366,92,21,0,0,29.5,true
@@ -6388,7 +6483,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 69,Obervellach,2023,365,92,55,16,0,32.8,true
 69,Obervellach,2024,366,92,71,21,0,33.5,true
 69,Obervellach,2025,365,92,61,19,1,35.6,true
-69,Obervellach,2026,242,91,79,38,0,34.7,true
+69,Obervellach,2026,304,92,86,38,0,34.7,true
 182,Oberwölz,1936,366,92,16,0,0,28.0,true
 182,Oberwölz,1937,337,92,11,0,0,27.4,true
 182,Oberwölz,1938,365,92,17,0,0,27.5,true
@@ -6473,7 +6568,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 182,Oberwölz,2023,365,92,44,9,0,31.6,true
 182,Oberwölz,2024,366,92,66,8,0,32.3,true
 182,Oberwölz,2025,365,92,52,14,0,33.7,true
-182,Oberwölz,2026,242,91,63,25,0,34.1,true
+182,Oberwölz,2026,304,92,70,25,0,34.1,true
 196,Patscherkofel,1940,153,31,0,0,0,19.0,false
 196,Patscherkofel,1941,365,92,0,0,0,20.5,true
 196,Patscherkofel,1942,365,92,0,0,0,21.0,true
@@ -6560,7 +6655,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 196,Patscherkofel,2023,365,92,0,0,0,22.4,true
 196,Patscherkofel,2024,366,92,0,0,0,21.3,true
 196,Patscherkofel,2025,365,92,0,0,0,20.7,true
-196,Patscherkofel,2026,242,91,0,0,0,22.4,true
+196,Patscherkofel,2026,304,92,0,0,0,22.4,true
 169,Pottschach,1961,275,92,55,15,0,33.5,true
 169,Pottschach,1962,365,92,55,9,1,35.2,true
 169,Pottschach,1963,365,92,56,8,0,32.5,true
@@ -6613,7 +6708,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 169,Pottschach,2023,365,92,85,29,1,35.4,true
 169,Pottschach,2024,366,92,93,47,2,36.3,true
 169,Pottschach,2025,365,92,74,27,3,36.1,true
-169,Pottschach,2026,242,91,90,45,14,39.6,true
+169,Pottschach,2026,304,92,108,49,14,39.6,true
 70,Poysdorf-Ost,1965,61,0,0,0,0,16.5,false
 70,Poysdorf-Ost,1966,365,92,41,3,0,31.4,true
 70,Poysdorf-Ost,1967,365,92,55,18,0,33.3,true
@@ -6675,7 +6770,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 70,Poysdorf-Ost,2023,365,92,89,30,0,34.9,true
 70,Poysdorf-Ost,2024,366,92,98,46,1,35.4,true
 70,Poysdorf-Ost,2025,365,92,79,24,3,36.1,true
-70,Poysdorf-Ost,2026,242,91,91,43,15,39.0,true
+70,Poysdorf-Ost,2026,304,92,104,46,15,39.0,true
 71,Preitenegg,1950,184,62,20,3,0,30.7,false
 71,Preitenegg,1951,365,92,7,0,0,26.2,true
 71,Preitenegg,1952,366,92,14,1,0,30.0,true
@@ -6752,7 +6847,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 71,Preitenegg,2023,365,92,25,0,0,29.1,true
 71,Preitenegg,2024,366,92,41,0,0,29.2,true
 71,Preitenegg,2025,365,92,30,4,0,32.0,true
-71,Preitenegg,2026,242,91,43,6,0,32.1,true
+71,Preitenegg,2026,304,92,47,6,0,32.1,true
 138,Prutz,1967,182,60,31,3,0,31.8,false
 138,Prutz,1968,366,92,27,7,0,32.4,true
 138,Prutz,1969,365,92,44,5,0,31.5,true
@@ -6812,7 +6907,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 138,Prutz,2023,365,92,69,18,0,34.4,true
 138,Prutz,2024,366,92,70,17,0,33.0,true
 138,Prutz,2025,365,92,59,21,0,33.5,true
-138,Prutz,2026,242,91,73,34,1,36.5,true
+138,Prutz,2026,304,92,91,36,1,36.5,true
 153,Präbichl,1948,239,55,3,0,0,26.0,false
 153,Präbichl,1949,365,92,5,0,0,25.2,true
 153,Präbichl,1950,365,92,11,1,0,30.1,true
@@ -6866,7 +6961,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 153,Präbichl,2023,365,92,21,0,0,28.9,true
 153,Präbichl,2024,366,92,24,0,0,28.3,true
 153,Präbichl,2025,365,92,21,0,0,28.8,true
-153,Präbichl,2026,242,91,39,4,0,32.5,true
+153,Präbichl,2026,304,92,40,4,0,32.5,true
 72,Puchberg am Schneeberg,1949,211,89,25,1,0,30.0,false
 72,Puchberg am Schneeberg,1950,365,92,46,8,1,36.4,true
 72,Puchberg am Schneeberg,1951,365,92,35,1,0,31.0,true
@@ -6944,7 +7039,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 72,Puchberg am Schneeberg,2023,365,92,70,16,0,33.8,true
 72,Puchberg am Schneeberg,2024,366,92,77,23,0,33.4,true
 72,Puchberg am Schneeberg,2025,365,92,60,15,0,33.8,true
-72,Puchberg am Schneeberg,2026,242,91,69,27,5,36.8,true
+72,Puchberg am Schneeberg,2026,304,92,80,29,5,36.8,true
 73,Radstadt-Tandalier,1936,366,92,23,1,0,30.2,true
 73,Radstadt-Tandalier,1937,365,92,20,0,0,29.2,true
 73,Radstadt-Tandalier,1938,365,92,26,1,0,30.6,true
@@ -7033,7 +7128,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 73,Radstadt-Tandalier,2023,365,92,61,18,0,32.8,true
 73,Radstadt-Tandalier,2024,366,92,68,24,0,33.2,true
 73,Radstadt-Tandalier,2025,365,92,58,19,0,32.8,true
-73,Radstadt-Tandalier,2026,242,91,62,29,1,35.5,true
+73,Radstadt-Tandalier,2026,304,92,73,31,1,35.5,true
 75,Ranshofen Braunau,1961,365,92,42,4,0,32.2,true
 75,Ranshofen Braunau,1962,365,92,44,9,0,33.8,true
 75,Ranshofen Braunau,1963,365,92,28,6,0,33.0,true
@@ -7095,7 +7190,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 75,Ranshofen Braunau,2023,365,92,83,28,3,36.8,true
 75,Ranshofen Braunau,2024,366,92,82,30,0,33.9,true
 75,Ranshofen Braunau,2025,365,92,75,22,0,34.2,true
-75,Ranshofen Braunau,2026,242,91,88,49,11,39.0,true
+75,Ranshofen Braunau,2026,304,92,102,51,11,39.0,true
 78,Rauris,1930,61,0,0,0,0,19.6,false
 78,Rauris,1931,365,92,39,2,0,30.0,true
 78,Rauris,1932,366,92,36,2,0,30.8,true
@@ -7189,7 +7284,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 78,Rauris,2023,365,92,52,15,0,32.2,true
 78,Rauris,2024,366,92,59,14,0,31.8,true
 78,Rauris,2025,365,92,50,12,0,32.8,true
-78,Rauris,2026,242,91,60,22,0,33.9,true
+78,Rauris,2026,304,92,65,22,0,33.9,true
 80,Reichenau an der Rax,1942,334,92,52,5,0,31.0,true
 80,Reichenau an der Rax,1943,365,92,51,7,1,35.1,true
 80,Reichenau an der Rax,1944,366,92,44,6,0,31.9,true
@@ -7274,7 +7369,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 80,Reichenau an der Rax,2023,365,92,77,21,0,34.9,true
 80,Reichenau an der Rax,2024,366,92,86,32,0,33.9,true
 80,Reichenau an der Rax,2025,365,92,66,22,0,34.7,true
-80,Reichenau an der Rax,2026,242,91,80,36,7,37.2,true
+80,Reichenau an der Rax,2026,304,92,93,39,7,37.2,true
 159,Reichersberg,1944,355,92,42,4,0,31.0,true
 159,Reichersberg,1948,92,0,0,0,0,23.0,false
 159,Reichersberg,1949,365,92,39,5,0,33.2,true
@@ -7354,7 +7449,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 159,Reichersberg,2023,365,92,69,21,1,35.6,true
 159,Reichersberg,2024,366,92,79,24,0,32.7,true
 159,Reichersberg,2025,365,92,66,16,0,33.1,true
-159,Reichersberg,2026,242,91,76,38,7,37.7,true
+159,Reichersberg,2026,304,92,85,40,7,37.7,true
 81,Retz Windmühle,1946,365,92,44,7,0,31.1,true
 81,Retz Windmühle,1947,365,92,86,31,1,35.1,true
 81,Retz Windmühle,1948,366,92,60,9,0,33.0,true
@@ -7435,7 +7530,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 81,Retz Windmühle,2023,365,92,82,27,0,34.4,true
 81,Retz Windmühle,2024,366,92,93,41,1,35.4,true
 81,Retz Windmühle,2025,365,92,73,19,2,35.7,true
-81,Retz Windmühle,2026,242,91,88,41,11,39.8,true
+81,Retz Windmühle,2026,304,92,99,44,11,39.8,true
 76,Reutte,1936,366,92,10,0,0,28.6,true
 76,Reutte,1937,365,92,19,1,0,30.2,true
 76,Reutte,1938,365,92,24,0,0,29.0,true
@@ -7518,7 +7613,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 76,Reutte,2023,365,92,44,5,0,33.5,true
 76,Reutte,2024,366,92,38,1,0,31.2,true
 76,Reutte,2025,365,92,36,6,0,30.7,true
-76,Reutte,2026,242,91,55,16,0,33.3,true
+76,Reutte,2026,302,92,59,16,0,33.3,true
 141,Ried im Innkreis,1936,366,92,22,1,0,30.0,true
 141,Ried im Innkreis,1937,365,92,35,2,0,30.2,true
 141,Ried im Innkreis,1938,254,30,8,0,0,28.8,false
@@ -7603,7 +7698,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 141,Ried im Innkreis,2023,365,92,65,19,0,34.8,true
 141,Ried im Innkreis,2024,366,92,73,21,0,33.1,true
 141,Ried im Innkreis,2025,365,92,59,15,0,33.2,true
-141,Ried im Innkreis,2026,242,91,74,31,6,36.6,true
+141,Ried im Innkreis,2026,304,92,83,33,6,36.6,true
 127,Rinn,1957,365,92,21,5,0,32.7,true
 127,Rinn,1958,365,92,25,1,0,30.2,true
 127,Rinn,1959,365,92,14,0,0,29.5,true
@@ -7673,7 +7768,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 127,Rinn,2023,365,92,46,12,0,33.1,true
 127,Rinn,2024,366,92,47,7,0,31.9,true
 127,Rinn,2025,365,92,43,10,0,31.7,true
-127,Rinn,2026,242,91,64,24,1,35.0,true
+127,Rinn,2026,304,92,69,24,1,35.0,true
 77,Rohrbach,1948,223,92,25,2,0,30.0,true
 77,Rohrbach,1949,365,92,39,4,0,32.0,true
 77,Rohrbach,1950,365,92,53,10,1,36.1,true
@@ -7752,7 +7847,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 77,Rohrbach,2023,365,92,50,8,0,32.9,true
 77,Rohrbach,2024,366,92,59,12,0,31.9,true
 77,Rohrbach,2025,364,91,40,7,0,32.1,false
-77,Rohrbach,2026,235,84,56,17,1,35.0,false
+77,Rohrbach,2026,297,85,59,17,1,35.0,false
 82,Rudolfshütte,1961,61,31,0,0,0,19.0,false
 82,Rudolfshütte,1962,212,92,0,0,0,18.6,true
 82,Rudolfshütte,1963,365,92,0,0,0,17.7,true
@@ -7817,7 +7912,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 82,Rudolfshütte,2023,365,92,0,0,0,21.7,true
 82,Rudolfshütte,2024,366,92,0,0,0,21.1,true
 82,Rudolfshütte,2025,365,92,0,0,0,20.3,true
-82,Rudolfshütte,2026,242,91,0,0,0,22.3,true
+82,Rudolfshütte,2026,304,92,0,0,0,22.3,true
 131,Salzburg Flughafen,1874,365,92,38,6,0,32.5,true
 131,Salzburg Flughafen,1875,365,92,34,2,0,31.1,true
 131,Salzburg Flughafen,1876,366,92,38,1,0,30.3,true
@@ -7969,7 +8064,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 131,Salzburg Flughafen,2023,365,92,76,25,2,36.8,true
 131,Salzburg Flughafen,2024,366,92,72,17,0,34.8,true
 131,Salzburg Flughafen,2025,365,92,63,21,0,33.6,true
-131,Salzburg Flughafen,2026,240,89,80,42,6,37.9,false
+131,Salzburg Flughafen,2026,304,92,97,46,7,37.9,true
 85,Schmittenhöhe,1931,233,92,0,0,0,21.0,true
 85,Schmittenhöhe,1932,175,0,0,0,0,19.0,false
 85,Schmittenhöhe,1933,365,92,0,0,0,21.2,true
@@ -8062,7 +8157,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 85,Schmittenhöhe,2023,365,92,0,0,0,24.5,true
 85,Schmittenhöhe,2024,366,92,0,0,0,23.0,true
 85,Schmittenhöhe,2025,365,92,0,0,0,23.2,true
-85,Schmittenhöhe,2026,242,91,0,0,0,24.9,true
+85,Schmittenhöhe,2026,304,92,0,0,0,24.9,true
 172,Schoppernau,1948,366,92,18,0,0,27.5,true
 172,Schoppernau,1949,365,92,30,1,0,31.0,true
 172,Schoppernau,1950,365,92,37,4,0,31.0,true
@@ -8141,7 +8236,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 172,Schoppernau,2023,365,92,45,10,0,33.2,true
 172,Schoppernau,2024,366,92,42,5,0,31.3,true
 172,Schoppernau,2025,365,92,41,8,0,31.1,true
-172,Schoppernau,2026,242,91,62,21,0,33.2,true
+172,Schoppernau,2026,304,92,69,21,0,33.2,true
 173,Schröcken,1948,289,92,4,0,0,25.2,true
 173,Schröcken,1949,365,92,10,0,0,28.4,true
 173,Schröcken,1957,31,0,0,0,0,19.0,false
@@ -8213,7 +8308,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 173,Schröcken,2023,365,92,27,3,0,30.5,true
 173,Schröcken,2024,366,92,19,0,0,29.6,true
 173,Schröcken,2025,365,92,25,0,0,29.5,true
-173,Schröcken,2026,242,91,44,4,0,30.3,true
+173,Schröcken,2026,304,92,47,4,0,30.3,true
 86,Schöckl,1948,365,92,3,0,0,26.0,true
 86,Schöckl,1949,365,92,0,0,0,24.0,true
 86,Schöckl,1950,365,92,10,0,0,28.0,true
@@ -8292,7 +8387,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 86,Schöckl,2023,365,92,0,0,0,24.6,true
 86,Schöckl,2024,366,92,0,0,0,24.3,true
 86,Schöckl,2025,365,92,3,0,0,25.5,true
-86,Schöckl,2026,242,91,8,0,0,27.7,true
+86,Schöckl,2026,304,92,8,0,0,27.7,true
 37,Schöngrabern,1936,366,92,33,0,0,29.6,true
 37,Schöngrabern,1937,365,92,36,0,0,29.8,true
 37,Schöngrabern,1938,365,92,39,3,0,30.2,true
@@ -8353,7 +8448,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 37,Schöngrabern,2023,365,92,90,32,2,35.4,true
 37,Schöngrabern,2024,366,92,95,43,1,35.3,true
 37,Schöngrabern,2025,365,92,76,21,1,35.7,true
-37,Schöngrabern,2026,242,91,90,44,14,39.4,true
+37,Schöngrabern,2026,304,92,103,47,14,39.4,true
 124,Seckau,1948,366,92,17,0,0,27.0,true
 124,Seckau,1949,365,92,16,0,0,28.0,true
 124,Seckau,1950,365,92,40,4,0,32.0,true
@@ -8430,7 +8525,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 124,Seckau,2023,365,92,34,7,0,31.8,true
 124,Seckau,2024,366,92,55,4,0,31.7,true
 124,Seckau,2025,365,92,53,11,0,31.8,true
-124,Seckau,2026,242,91,59,18,0,33.4,true
+124,Seckau,2026,304,92,65,18,0,33.4,true
 87,Seefeld,1948,245,92,2,0,0,25.9,true
 87,Seefeld,1949,335,92,17,0,0,28.5,true
 87,Seefeld,1950,365,92,20,2,0,30.5,true
@@ -8508,7 +8603,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 87,Seefeld,2023,365,92,34,3,0,31.8,true
 87,Seefeld,2024,366,92,34,0,0,29.5,true
 87,Seefeld,2025,365,92,32,0,0,29.6,true
-87,Seefeld,2026,242,91,43,5,0,32.3,true
+87,Seefeld,2026,304,92,46,6,0,32.3,true
 197,Seibersdorf,1961,214,92,59,17,0,34.0,true
 197,Seibersdorf,1962,365,92,67,19,2,35.0,true
 197,Seibersdorf,1963,365,92,75,19,0,34.0,true
@@ -8572,7 +8667,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 197,Seibersdorf,2023,190,39,31,6,0,33.6,false
 197,Seibersdorf,2024,235,92,90,48,2,35.3,true
 197,Seibersdorf,2025,365,92,76,23,1,36.5,true
-197,Seibersdorf,2026,242,91,94,47,16,39.8,true
+197,Seibersdorf,2026,303,92,110,51,16,39.8,true
 88,Semmering,1936,366,92,6,0,0,28.0,true
 88,Semmering,1937,365,92,5,0,0,25.8,true
 88,Semmering,1938,365,92,10,0,0,27.4,true
@@ -8650,7 +8745,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 88,Semmering,2023,365,92,24,0,0,29.6,true
 88,Semmering,2024,366,92,34,0,0,29.6,true
 88,Semmering,2025,365,92,23,0,0,29.9,true
-88,Semmering,2026,242,91,36,7,0,31.5,true
+88,Semmering,2026,304,92,38,7,0,31.5,true
 130,Sillian,1951,286,92,29,0,0,29.2,true
 130,Sillian,1952,342,92,28,8,0,34.2,true
 130,Sillian,1953,365,92,25,0,0,28.6,true
@@ -8726,7 +8821,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 130,Sillian,2023,365,92,43,10,0,33.0,true
 130,Sillian,2024,366,92,51,10,0,31.7,true
 130,Sillian,2025,365,92,49,9,0,32.3,true
-130,Sillian,2026,242,91,70,25,0,32.1,true
+130,Sillian,2026,304,92,75,25,0,32.1,true
 213,Sonnblick,1886,61,0,0,0,0,1.0,false
 213,Sonnblick,1887,365,92,0,0,0,9.0,true
 213,Sonnblick,1888,366,92,0,0,0,10.0,true
@@ -8867,7 +8962,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 213,Sonnblick,2023,365,92,0,0,0,15.7,true
 213,Sonnblick,2024,366,92,0,0,0,15.2,true
 213,Sonnblick,2025,365,92,0,0,0,13.9,true
-213,Sonnblick,2026,242,91,0,0,0,15.3,true
+213,Sonnblick,2026,304,92,0,0,0,15.3,true
 90,St.Andrä im Lavanttal,1961,365,92,55,8,0,32.0,true
 90,St.Andrä im Lavanttal,1962,365,92,43,4,0,31.5,true
 90,St.Andrä im Lavanttal,1963,365,92,56,9,0,33.0,true
@@ -8933,7 +9028,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 90,St.Andrä im Lavanttal,2023,365,92,87,22,0,33.9,true
 90,St.Andrä im Lavanttal,2024,366,92,94,42,0,34.2,true
 90,St.Andrä im Lavanttal,2025,365,92,96,42,9,38.0,true
-90,St.Andrä im Lavanttal,2026,242,91,98,59,15,38.9,true
+90,St.Andrä im Lavanttal,2026,304,92,111,63,15,38.9,true
 119,St.Anton am Arlberg,1938,273,62,9,0,0,28.0,false
 119,St.Anton am Arlberg,1939,365,92,13,0,0,27.4,true
 119,St.Anton am Arlberg,1940,366,92,2,0,0,25.4,true
@@ -9014,7 +9109,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 119,St.Anton am Arlberg,2023,365,92,40,3,0,31.4,true
 119,St.Anton am Arlberg,2024,366,92,36,2,0,31.0,true
 119,St.Anton am Arlberg,2025,365,92,33,4,0,30.3,true
-119,St.Anton am Arlberg,2026,242,91,51,9,0,32.8,true
+119,St.Anton am Arlberg,2026,304,92,57,9,0,32.8,true
 185,St.Jakob im Defereggental,1938,365,92,8,0,0,27.6,true
 185,St.Jakob im Defereggental,1939,365,92,4,0,0,25.6,true
 185,St.Jakob im Defereggental,1940,366,92,0,0,0,24.6,true
@@ -9103,7 +9198,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 185,St.Jakob im Defereggental,2023,365,92,23,0,0,29.9,true
 185,St.Jakob im Defereggental,2024,366,92,30,0,0,29.3,true
 185,St.Jakob im Defereggental,2025,365,92,26,1,0,30.2,true
-185,St.Jakob im Defereggental,2026,242,91,40,1,0,30.5,true
+185,St.Jakob im Defereggental,2026,304,92,41,1,0,30.5,true
 210,St.Leonhard im Pitztal,1967,365,92,8,0,0,27.5,true
 210,St.Leonhard im Pitztal,1968,366,92,7,0,0,27.6,true
 210,St.Leonhard im Pitztal,1969,365,92,5,0,0,26.9,true
@@ -9163,7 +9258,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 210,St.Leonhard im Pitztal,2023,365,92,18,0,0,29.9,true
 210,St.Leonhard im Pitztal,2024,366,92,17,0,0,28.7,true
 210,St.Leonhard im Pitztal,2025,365,92,28,0,0,28.9,true
-210,St.Leonhard im Pitztal,2026,242,91,35,1,0,31.4,true
+210,St.Leonhard im Pitztal,2026,304,92,38,1,0,31.4,true
 92,St.Michael im Lungau,1968,31,0,0,0,0,4.5,false
 92,St.Michael im Lungau,1969,365,92,15,0,0,28.6,true
 92,St.Michael im Lungau,1970,365,92,23,0,0,27.5,true
@@ -9222,7 +9317,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 92,St.Michael im Lungau,2023,365,92,41,6,0,32.6,true
 92,St.Michael im Lungau,2024,366,92,51,4,0,31.4,true
 92,St.Michael im Lungau,2025,365,92,42,10,0,32.4,true
-92,St.Michael im Lungau,2026,236,85,48,9,0,32.1,false
+92,St.Michael im Lungau,2026,299,87,52,9,0,32.1,false
 93,St.Pölten Landhaus,1936,366,92,45,5,0,32.0,true
 93,St.Pölten Landhaus,1937,365,92,65,4,0,31.9,true
 93,St.Pölten Landhaus,1938,288,59,40,11,0,32.0,false
@@ -9312,7 +9407,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 93,St.Pölten Landhaus,2023,365,92,85,33,3,35.7,true
 93,St.Pölten Landhaus,2024,366,92,99,42,0,34.7,true
 93,St.Pölten Landhaus,2025,365,92,73,23,0,34.9,true
-93,St.Pölten Landhaus,2026,242,91,89,46,12,40.7,true
+93,St.Pölten Landhaus,2026,304,92,102,48,12,40.7,true
 95,St.Veit an der Glan,1968,245,92,30,7,0,34.0,true
 95,St.Veit an der Glan,1969,365,92,55,9,0,32.5,true
 95,St.Veit an der Glan,1970,365,92,57,10,0,33.6,true
@@ -9371,7 +9466,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 95,St.Veit an der Glan,2023,365,92,81,22,0,34.4,true
 95,St.Veit an der Glan,2024,366,92,91,42,0,33.8,true
 95,St.Veit an der Glan,2025,365,92,87,31,4,36.9,true
-95,St.Veit an der Glan,2026,242,91,90,51,8,37.1,true
+95,St.Veit an der Glan,2026,304,92,104,53,8,37.1,true
 109,St.Wolfgang,1936,366,92,32,3,0,31.0,true
 109,St.Wolfgang,1937,365,92,38,3,0,32.8,true
 109,St.Wolfgang,1938,365,92,36,4,0,31.3,true
@@ -9441,7 +9536,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 109,St.Wolfgang,2023,365,92,66,24,1,35.6,true
 109,St.Wolfgang,2024,366,92,67,21,0,33.6,true
 109,St.Wolfgang,2025,365,92,59,19,0,33.8,true
-109,St.Wolfgang,2026,242,91,78,36,6,37.6,true
+109,St.Wolfgang,2026,304,92,90,38,6,37.6,true
 89,Stift Zwettl,1936,366,92,19,0,0,29.0,true
 89,Stift Zwettl,1937,365,92,24,0,0,29.0,true
 89,Stift Zwettl,1938,365,92,31,1,0,30.2,true
@@ -9532,7 +9627,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 89,Stift Zwettl,2023,365,92,64,17,0,34.2,true
 89,Stift Zwettl,2024,366,92,67,18,0,32.9,true
 89,Stift Zwettl,2025,365,92,49,11,0,33.3,true
-89,Stift Zwettl,2026,242,91,70,25,7,38.7,true
+89,Stift Zwettl,2026,304,92,78,26,7,38.7,true
 97,Stolzalpe,1938,365,92,5,0,0,26.6,true
 97,Stolzalpe,1939,365,92,9,0,0,27.0,true
 97,Stolzalpe,1940,366,92,0,0,0,24.9,true
@@ -9619,7 +9714,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 97,Stolzalpe,2023,365,92,21,0,0,28.9,true
 97,Stolzalpe,2024,366,92,26,0,0,28.7,true
 97,Stolzalpe,2025,365,92,21,0,0,29.8,true
-97,Stolzalpe,2026,242,91,40,3,0,31.2,true
+97,Stolzalpe,2026,304,92,41,3,0,31.2,true
 98,Tamsweg,1943,365,92,30,2,0,30.7,true
 98,Tamsweg,1944,366,92,23,1,0,30.0,true
 98,Tamsweg,1945,365,92,42,1,0,30.0,true
@@ -9703,7 +9798,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 98,Tamsweg,2023,365,92,45,12,0,32.2,true
 98,Tamsweg,2024,366,92,55,11,0,32.3,true
 98,Tamsweg,2025,365,92,55,14,0,32.4,true
-98,Tamsweg,2026,242,91,57,20,0,34.3,true
+98,Tamsweg,2026,304,92,63,20,0,34.3,true
 136,Umhausen,1938,350,92,37,3,0,31.0,true
 136,Umhausen,1939,365,92,15,0,0,28.2,true
 136,Umhausen,1940,366,92,8,0,0,26.8,true
@@ -9788,7 +9883,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 136,Umhausen,2023,365,92,50,12,0,33.5,true
 136,Umhausen,2024,366,92,46,7,0,31.7,true
 136,Umhausen,2025,365,92,44,13,0,31.9,true
-136,Umhausen,2026,241,90,62,27,1,35.3,false
+136,Umhausen,2026,303,91,69,28,1,35.3,false
 100,Villach Stadt,1930,365,92,58,5,0,33.0,true
 100,Villach Stadt,1931,365,92,51,5,0,31.9,true
 100,Villach Stadt,1932,366,92,67,14,0,34.2,true
@@ -9883,7 +9978,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 100,Villach Stadt,2023,365,92,81,24,0,34.6,true
 100,Villach Stadt,2024,366,92,91,38,0,34.3,true
 100,Villach Stadt,2025,365,92,90,32,4,37.9,true
-100,Villach Stadt,2026,242,91,94,53,6,37.2,true
+100,Villach Stadt,2026,303,92,105,55,6,37.2,true
 188,Völkermarkt-Goldbrunnhof,1950,31,0,0,0,0,10.0,false
 188,Völkermarkt-Goldbrunnhof,1951,365,92,58,6,0,30.6,true
 188,Völkermarkt-Goldbrunnhof,1952,366,92,59,18,0,34.2,true
@@ -9931,7 +10026,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 188,Völkermarkt-Goldbrunnhof,2023,365,92,70,19,0,33.4,true
 188,Völkermarkt-Goldbrunnhof,2024,366,92,86,34,0,33.4,true
 188,Völkermarkt-Goldbrunnhof,2025,365,92,82,32,3,37.0,true
-188,Völkermarkt-Goldbrunnhof,2026,242,91,89,43,6,36.9,true
+188,Völkermarkt-Goldbrunnhof,2026,304,92,98,45,6,36.9,true
 101,Waidhofen an der Ybbs,1924,31,0,0,0,0,9.0,false
 101,Waidhofen an der Ybbs,1925,120,0,0,0,0,18.4,false
 101,Waidhofen an der Ybbs,1926,334,92,26,1,0,30.2,true
@@ -10034,7 +10129,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 101,Waidhofen an der Ybbs,2023,365,92,77,27,1,35.6,true
 101,Waidhofen an der Ybbs,2024,366,92,89,34,0,34.2,true
 101,Waidhofen an der Ybbs,2025,365,92,66,20,0,33.8,true
-101,Waidhofen an der Ybbs,2026,242,91,82,45,10,39.2,true
+101,Waidhofen an der Ybbs,2026,304,92,96,47,10,39.2,true
 160,Waizenkirchen,1948,366,92,43,4,0,32.0,true
 160,Waizenkirchen,1949,365,92,42,10,0,34.0,true
 160,Waizenkirchen,1950,365,92,67,21,3,37.0,true
@@ -10112,7 +10207,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 160,Waizenkirchen,2022,365,92,69,12,0,33.9,true
 160,Waizenkirchen,2023,365,92,64,20,0,34.9,true
 160,Waizenkirchen,2024,156,4,3,0,0,27.0,false
-160,Waizenkirchen,2026,31,31,27,13,3,37.4,false
+160,Waizenkirchen,2026,93,32,35,15,3,37.4,false
 103,Weitensfeld,1953,365,92,27,0,0,29.0,true
 103,Weitensfeld,1954,365,92,25,0,0,27.5,true
 103,Weitensfeld,1955,365,92,15,0,0,29.3,true
@@ -10186,7 +10281,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 103,Weitensfeld,2023,365,92,57,15,0,32.1,true
 103,Weitensfeld,2024,366,92,79,20,0,32.2,true
 103,Weitensfeld,2025,365,92,70,22,1,35.2,true
-103,Weitensfeld,2026,242,91,80,33,0,34.3,true
+103,Weitensfeld,2026,304,92,87,33,0,34.3,true
 148,Weitra,1936,366,92,17,0,0,29.0,true
 148,Weitra,1937,365,92,23,2,0,32.0,true
 148,Weitra,1938,365,92,23,1,0,30.2,true
@@ -10277,7 +10372,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 148,Weitra,2023,365,92,69,17,1,35.8,true
 148,Weitra,2024,366,92,71,22,0,33.8,true
 148,Weitra,2025,365,92,55,12,0,33.6,true
-148,Weitra,2026,240,89,68,24,5,37.4,false
+148,Weitra,2026,304,92,78,27,7,37.6,true
 104,Weyer,1968,214,92,30,5,0,33.0,true
 104,Weyer,1969,365,92,46,4,0,30.7,true
 104,Weyer,1970,365,92,43,4,0,31.2,true
@@ -10336,7 +10431,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 104,Weyer,2023,365,92,79,34,2,36.0,true
 104,Weyer,2024,366,92,88,37,1,35.6,true
 104,Weyer,2025,365,92,68,21,0,34.4,true
-104,Weyer,2026,242,91,80,44,10,39.6,true
+104,Weyer,2026,303,92,98,46,10,39.6,true
 105,Wien Hohe Warte,1855,334,92,67,21,0,34.8,true
 105,Wien Hohe Warte,1856,366,92,62,27,0,34.8,true
 105,Wien Hohe Warte,1857,365,92,81,24,5,37.0,true
@@ -10508,7 +10603,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 105,Wien Hohe Warte,2023,365,92,91,32,3,36.2,true
 105,Wien Hohe Warte,2024,366,92,102,45,3,35.0,true
 105,Wien Hohe Warte,2025,365,92,84,27,2,36.8,true
-105,Wien Hohe Warte,2026,242,91,94,48,17,39.8,true
+105,Wien Hohe Warte,2026,304,92,111,51,17,39.8,true
 106,Wien Mariabrunn,1936,366,92,49,7,0,31.5,true
 106,Wien Mariabrunn,1937,365,92,61,6,0,31.8,true
 106,Wien Mariabrunn,1938,365,92,49,14,0,32.5,true
@@ -10596,7 +10691,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 106,Wien Mariabrunn,2023,365,92,88,33,4,36.2,true
 106,Wien Mariabrunn,2024,366,92,97,45,1,35.0,true
 106,Wien Mariabrunn,2025,365,92,82,23,1,36.4,true
-106,Wien Mariabrunn,2026,242,91,94,50,14,39.9,true
+106,Wien Mariabrunn,2026,304,92,110,54,14,39.9,true
 107,Wien Unterlaa,1963,92,0,0,0,0,20.6,false
 107,Wien Unterlaa,1964,366,92,59,15,0,33.8,true
 107,Wien Unterlaa,1965,365,92,40,5,0,30.8,true
@@ -10660,7 +10755,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 107,Wien Unterlaa,2023,365,92,92,35,3,36.4,true
 107,Wien Unterlaa,2024,366,92,99,47,1,35.3,true
 107,Wien Unterlaa,2025,365,92,80,24,1,37.5,true
-107,Wien Unterlaa,2026,242,91,91,48,15,39.9,true
+107,Wien Unterlaa,2026,304,92,106,51,15,39.9,true
 112,Wiener Neustadt Flugplatz,1936,366,92,55,7,0,32.4,true
 112,Wiener Neustadt Flugplatz,1937,365,92,59,4,0,30.8,true
 112,Wiener Neustadt Flugplatz,1938,365,92,52,10,0,31.7,true
@@ -10745,7 +10840,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 112,Wiener Neustadt Flugplatz,2023,365,92,89,32,2,35.4,true
 112,Wiener Neustadt Flugplatz,2024,366,92,103,50,5,36.1,true
 112,Wiener Neustadt Flugplatz,2025,365,92,83,30,1,36.0,true
-112,Wiener Neustadt Flugplatz,2026,242,91,93,46,14,39.4,true
+112,Wiener Neustadt Flugplatz,2026,304,92,111,50,14,39.4,true
 111,Wolfsegg,1951,51,0,0,0,0,13.0,false
 111,Wolfsegg,1952,305,92,31,6,0,33.1,true
 111,Wolfsegg,1953,304,92,28,1,0,30.3,true
@@ -10821,7 +10916,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 111,Wolfsegg,2023,365,92,41,5,0,32.3,true
 111,Wolfsegg,2024,366,92,54,3,0,30.5,true
 111,Wolfsegg,2025,365,92,40,5,0,30.8,true
-111,Wolfsegg,2026,242,91,62,20,4,35.3,true
+111,Wolfsegg,2026,304,92,67,20,4,35.3,true
 202,Wörterberg,1939,181,30,6,0,0,27.2,false
 202,Wörterberg,1940,31,0,0,0,0,6.0,false
 202,Wörterberg,1941,108,0,3,0,0,26.0,false
@@ -10909,7 +11004,7 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 202,Wörterberg,2023,365,92,71,15,0,32.4,true
 202,Wörterberg,2024,366,92,84,32,0,32.9,true
 202,Wörterberg,2025,365,92,72,16,0,34.6,true
-202,Wörterberg,2026,242,91,80,37,4,36.6,true
+202,Wörterberg,2026,304,92,92,40,4,36.6,true
 115,Zeltweg,1962,92,0,0,0,0,22.4,false
 115,Zeltweg,1963,365,92,36,1,0,31.2,true
 115,Zeltweg,1964,366,92,39,1,0,30.1,true
@@ -10974,4 +11069,4 @@ station_id,station_name,year,n_observed,jja_observed,days_ge_25,days_ge_30,days_
 115,Zeltweg,2023,365,92,64,15,0,33.6,true
 115,Zeltweg,2024,366,92,77,25,0,33.5,true
 115,Zeltweg,2025,365,92,69,18,0,34.1,true
-115,Zeltweg,2026,242,91,79,37,0,34.9,true
+115,Zeltweg,2026,304,92,89,38,0,34.9,true
